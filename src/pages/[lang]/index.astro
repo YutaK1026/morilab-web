@@ -1,0 +1,36 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PageContent from '../../components/ui/PageContent.astro';
+import { useTranslations, type Lang } from '../../i18n';
+import publications from '../../content/publications.json';
+import HeroSection from '../../components/pages/home/HeroSection.astro';
+import LabIntroSection from '../../components/pages/home/LabIntroSection.astro';
+import ResearchAreasSection from '../../components/pages/home/ResearchAreasSection.astro';
+import PublicationsSection from '../../components/pages/home/PublicationsSection.astro';
+import CtaSection from '../../components/pages/home/CtaSection.astro';
+import './index.css';
+
+export async function getStaticPaths() {
+  return [
+    { params: { lang: 'jp' } },
+    { params: { lang: 'en' } }
+  ];
+}
+
+const { lang } = Astro.params;
+const t = useTranslations((lang === 'jp' ? 'ja' : 'en') as Lang);
+const researchAreas = t('researchAreas');
+const labNameJp = '森研究室';
+const labNameEn = 'Mori Laboratory';
+
+---
+
+<Layout title="Mori Laboratory">
+  <HeroSection labNameJp={labNameJp} labNameEn={labNameEn} />
+  <PageContent>
+    <LabIntroSection t={t} />
+    <ResearchAreasSection t={t} lang={lang} researchAreas={researchAreas} />
+    <PublicationsSection t={t} publications={publications} />
+    <CtaSection t={t} lang={lang} />
+  </PageContent>
+</Layout>

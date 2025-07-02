@@ -1,0 +1,137 @@
+---
+import Header from '../components/ui/Header.astro';
+import '../styles/variants.css';
+
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- 背景装飾 -->
+    <div class="background-decoration">
+      <div class="bg-circle bg-circle-1"></div>
+      <div class="bg-circle bg-circle-2"></div>
+      <div class="bg-circle bg-circle-3"></div>
+    </div>
+
+    <Header />
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background: var(--bg-primary);
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  main {
+    min-height: calc(100vh - 80px);
+    padding-top: var(--spacing-lg);
+    position: relative;
+    z-index: 1;
+  }
+
+  /* 背景装飾 */
+  .background-decoration {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  .bg-circle {
+    position: absolute;
+    border-radius: 50%;
+    background: var(--gradient-medical);
+    opacity: 0.03;
+    animation: float 20s ease-in-out infinite;
+  }
+
+  .bg-circle-1 {
+    width: 300px;
+    height: 300px;
+    top: 10%;
+    right: -100px;
+    animation-delay: 0s;
+  }
+
+  .bg-circle-2 {
+    width: 200px;
+    height: 200px;
+    bottom: 20%;
+    left: -50px;
+    animation-delay: -5s;
+  }
+
+  .bg-circle-3 {
+    width: 150px;
+    height: 150px;
+    top: 60%;
+    right: 20%;
+    animation-delay: -10s;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    33% {
+      transform: translateY(-20px) rotate(120deg);
+    }
+    66% {
+      transform: translateY(10px) rotate(240deg);
+    }
+  }
+
+  /* スムーズスクロール */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* フォーカススタイル */
+  *:focus {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+  }
+
+  /* レスポンシブ */
+  @media (max-width: 768px) {
+    main {
+      padding-top: var(--spacing-md);
+    }
+
+    .bg-circle {
+      display: none;
+    }
+  }
+</style>

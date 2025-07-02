@@ -1,0 +1,29 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import PageContent from '../../../components/ui/PageContent.astro';
+import { translations } from '../../../data/translations';
+import './index.css';
+
+export async function getStaticPaths() {
+  return [
+    { params: { lang: 'jp' } },
+    { params: { lang: 'en' } }
+  ];
+}
+
+const { lang } = Astro.params;
+const t = translations[lang as keyof typeof translations];
+---
+<Layout title={t.aboutTitle}>
+  <PageContent>
+    <div class="about-content">
+      <h1>{t.aboutTitle}</h1>
+      <p>{t.aboutDescription}</p>
+      <ul>
+        <li>{t.director}</li>
+        <li>{t.location}</li>
+      </ul>
+      <p>{t.wikiLink}</p>
+    </div>
+  </PageContent>
+</Layout>
