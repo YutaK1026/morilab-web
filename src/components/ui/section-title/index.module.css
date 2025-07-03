@@ -1,0 +1,28 @@
+@import "../../../styles/variants.css";
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* 罫線と文字の間隔 */
+}
+
+.line {
+  flex: 0 0 60px;
+  height: 2px;
+  background: var(--color-accent);
+}
+
+.text {
+  font-weight: 700;
+}
+
+/* ──サイズ切替── */
+.sm .text {
+  font-size: 24px;
+}
+.md .text {
+  font-size: 32px;
+}
+.lg .text {
+  font-size: 40px;
+}

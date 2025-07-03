@@ -1,12 +1,16 @@
 html,
 body {
-  height: 100%;
+  margin: 0; /* UA 余白を完全に消す */
+  padding: 0;
+  width: 100%; /* 明示しておくと安心 */
+  overflow-x: hidden; /* 応急処置：横はみ出しを切る */
 }
 
 body {
   display: flex;
   flex-direction: column;
   margin: 0; /* UA デフォルト余白を消す */
+  width: 100vw;
 }
 
 main {
