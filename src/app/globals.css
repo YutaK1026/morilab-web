@@ -1,0 +1,14 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0; /* UA デフォルト余白を消す */
+}
+
+main {
+  flex: 1; /* 余った高さを占める → footer を下へ押し出す */
+}

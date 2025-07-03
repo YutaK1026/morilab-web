@@ -1,0 +1,95 @@
+@import "../../../styles/variants.css";
+
+.footer {
+  width: 100%;
+  margin-top: auto;
+  background: #757575;
+  color: #fff;
+  padding: 48px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.footerContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2:1 */
+  margin-bottom: 32px;
+
+  /* モバイルで縦並びに */
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr; /* 1カラム */
+  }
+}
+
+.footerNav {
+  /* 左右中央表示*/
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  max-width: 400px;
+}
+
+.footerLink {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  margin-bottom: 16px;
+  transition: text-decoration 0.2s;
+}
+.footerLink:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.footerImages {
+  /* max-widthになったら折り返して横２列縦３列にする*/
+  min-width: 400px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.footerImage {
+  width: 180px;
+  height: 60px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.footerCopyright {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-family: "JetBrains Mono", monospace;
+}
+
+@media (max-width: 900px) {
+  .footerNav {
+    gap: 16px 32px;
+    font-size: 1.2rem;
+  }
+  .footerImages {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 12px;
+    padding-top: 24px;
+  }
+  .footerImage {
+    max-width: 120px;
+    height: 40px;
+  }
+  .footerCopyright {
+    font-size: 1.1rem;
+  }
+}

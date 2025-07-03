@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import Header from "@/components/ui/header";
+import Footer from "@/components/ui/footer";
 import ja from "@/messages/ja.json";
 import en from "@/messages/en.json";
 import zh from "@/messages/zh.json";
@@ -33,6 +34,7 @@ export default async function RootLayout({
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header lang={locale} />
           {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
