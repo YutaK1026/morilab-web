@@ -1,0 +1,104 @@
+@import "../../../styles/variants.css";
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 40px 0 40px;
+  font-family: "JetBrains Mono", monospace;
+  background: var(--color-bg, #fff);
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__logo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.header__titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__main-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.header__subtitle {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--color-subtext, #222);
+  margin-top: 2px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  margin: 36px 0 36px 0;
+}
+
+.header__nav-link {
+  font-size: 1.25rem;
+  color: var(--color-text, #111);
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.header__nav-link--active,
+.header__nav-link:hover {
+  border-bottom: 2px solid var(--color-accent, #2e7d32);
+}
+
+.header__lang-select {
+  margin-left: 40px;
+}
+
+.header__lang-select select {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.1rem;
+  padding: 6px 16px;
+  border: 1px solid var(--color-border, #bbb);
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .header {
+    padding: 16px 12px 0 12px;
+  }
+  .header__top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .header__nav {
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+  }
+  .header__lang-select {
+    margin-left: 0;
+    margin-top: 12px;
+  }
+}
