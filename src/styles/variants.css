@@ -1,57 +1,7 @@
 :root {
-  /* 医用画像研究に特化したカラーパレット */
-  --bg-primary: #f8fafc;
-  --bg-secondary: #ffffff;
-  --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  --bg-medical: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-
-  /* テキストカラー */
-  --text-primary: #1e293b;
-  --text-secondary: #64748b;
-  --text-light: #94a3b8;
-
-  /* カード関連 */
-  --card-bg: #ffffff;
-  --card-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-  --card-shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.12);
-  --card-border-radius: 16px;
-  --card-border: 1px solid rgba(148, 163, 184, 0.1);
-
-  /* ヘッダー関連 */
-  --header-bg: rgba(255, 255, 255, 0.95);
-  --header-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  --header-backdrop: blur(20px);
-
-  /* リンクカラー */
-  --link-color: #3b82f6;
-  --link-hover: #1d4ed8;
-
-  /* アクセントカラー - 医用画像の青系 */
-  --accent-color: #5ba74b;
-  --accent-secondary: #4a8c3d;
-  --accent-light: #7bc06a;
-
-  /* 医用画像研究の専門色 - 緑系基調 */
-  --medical-green: #5ba74b;
-  --medical-teal: #4a8c3d;
-  --medical-emerald: #7bc06a;
-  --medical-forest: #3d7a2f;
-
-  /* グラデーション - 緑系基調 */
-  --gradient-primary: linear-gradient(135deg, #5ba74b 0%, #4a8c3d 100%);
-  --gradient-medical: linear-gradient(135deg, #7bc06a 0%, #5ba74b 100%);
-  --gradient-accent: linear-gradient(135deg, #5ba74b 0%, #4a8c3d 100%);
-
-  /* アニメーション */
-  --transition-fast: 0.2s ease;
-  --transition-normal: 0.3s ease;
-  --transition-slow: 0.5s ease;
-
-  /* スペーシング */
-  --spacing-xs: 0.5rem;
-  --spacing-sm: 1rem;
-  --spacing-md: 1.5rem;
-  --spacing-lg: 2rem;
-  --spacing-xl: 3rem;
-  --spacing-2xl: 4rem;
+  --color-bg: #fff;
+  --color-text: #111;
+  --color-subtext: #222;
+  --color-accent: #2e7d32;
+  --color-border: #bbb;
 }
