@@ -1,6 +1,6 @@
 import styles from "./index.module.css";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
 const NAV_LINKS = [
   { href: "/", label: "home" },
@@ -13,16 +13,16 @@ const NAV_LINKS = [
 ];
 
 const IMAGES = [
-  { src: "/img1.png", alt: "img1" },
-  { src: "/img2.png", alt: "img2" },
-  { src: "/img3.png", alt: "img3" },
-  { src: "/img4.png", alt: "img4" },
-  { src: "/img5.png", alt: "img5" },
-  { src: "/img6.png", alt: "img6" },
+  { src: "/top/main.png", alt: "img1" },
+  { src: "/top/main.png", alt: "img2" },
+  { src: "/top/main.png", alt: "img3" },
+  { src: "/top/main.png", alt: "img4" },
+  { src: "/top/main.png", alt: "img5" },
+  { src: "/top/main.png", alt: "img6" },
 ];
 
-export default function Footer() {
-  const t = useTranslations("header");
+export default async function Footer() {
+  const t = await getTranslations("header");
   return (
     <footer className={styles.footer}>
       <div className={styles.footerContent}>

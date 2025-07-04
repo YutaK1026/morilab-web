@@ -52,3 +52,11 @@
   gap: 2.5rem; /* カード間の間隔 */
   padding-block: 2rem; /* セクションの上下余白：任意 */
 }
+
+.news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 60px 20px 60px 20px;
+}

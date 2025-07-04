@@ -1,0 +1,24 @@
+.list {
+  margin-inline: auto;
+  padding: 2rem 1rem;
+  max-width: 960px;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.row {
+  display: flex;
+  gap: 1.5rem;
+  padding-block: 0.75rem;
+  border-bottom: 1px solid #aaa;
+  font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+}
+
+.date {
+  flex: 0 0 110px;
+}
+.author {
+  flex: 0 0 80px;
+}
+.title {
+  flex: 1 1 auto;
+}

@@ -1,5 +1,3 @@
-@import "../../../styles/variants.css";
-
 .card {
   display: flex;
   flex-direction: column;

@@ -20,7 +20,11 @@
         "title": "Image Recognition, Understanding, and Computer Vision",
         "description": "Use PC to analyze medical images and connect to cancer detection and density structure analysis"
       },
-      "button": "More information"
+      "button": "View more"
+    },
+    "news": {
+      "title": "Latest News",
+      "button": "View more"
     }
   }
 }
