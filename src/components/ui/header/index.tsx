@@ -73,7 +73,7 @@ export default function Header({ lang }: { lang: string }) {
         <div className={`${styles.langSelect} ${styles.langSelectDesktop}`}>
           <select value={lang} onChange={handleLangChange}>
             {routing.locales.map((l) => (
-              <option key={l} onClick={() => router.push(`/${l}`)}>
+              <option key={l} value={l}>
                 {l}
               </option>
             ))}
@@ -103,7 +103,7 @@ export default function Header({ lang }: { lang: string }) {
         {NAV_LINKS.map((link) => (
           <a
             key={link.href}
-            href={link.href}
+            href={getLocalePath(link.href)}
             className={
               styles.navLink +
               (isActive(getLocalePath(link.href))
@@ -159,7 +159,7 @@ export default function Header({ lang }: { lang: string }) {
           {NAV_LINKS.map((link) => (
             <a
               key={link.href}
-              href={link.href}
+              href={getLocalePath(link.href)}
               className={
                 styles.navLink +
                 (isActive(getLocalePath(link.href))

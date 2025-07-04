@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { SectionTitle } from "@/components/ui/section-title";
@@ -29,6 +29,12 @@ export const MessageSection = () => {
 export const ResearchThemeSection = () => {
   const t = useTranslations("top.researchTheme");
   const router = useRouter();
+  const pathname = usePathname();
+
+  const getLocalePrefix = () => {
+    const localeMatch = pathname.match(/^\/(ja|en|zh)/);
+    return localeMatch ? localeMatch[0] : "";
+  };
 
   return (
     <div className={styles.researchTheme}>
@@ -57,7 +63,8 @@ export const ResearchThemeSection = () => {
         label={t("button")}
         variant="primary"
         onClick={() => {
-          router.push("/theme");
+          const localePrefix = getLocalePrefix();
+          router.push(`${localePrefix}/theme`);
         }}
       />
     </div>
@@ -67,6 +74,12 @@ export const ResearchThemeSection = () => {
 export const NewsSection = ({ news }: I18nSectionsProps) => {
   const t = useTranslations("top.news");
   const router = useRouter();
+  const pathname = usePathname();
+
+  const getLocalePrefix = () => {
+    const localeMatch = pathname.match(/^\/(ja|en|zh)/);
+    return localeMatch ? localeMatch[0] : "";
+  };
 
   return (
     <div className={styles.news}>
@@ -76,7 +89,8 @@ export const NewsSection = ({ news }: I18nSectionsProps) => {
         label={t("button")}
         variant="primary"
         onClick={() => {
-          router.push("/news");
+          const localePrefix = getLocalePrefix();
+          router.push(`${localePrefix}/news`);
         }}
       />
     </div>
