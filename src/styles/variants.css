@@ -1,8 +1,11 @@
 :root {
   --color-bg: #fff;
+  --color-bg-secondary: #f9f9f9;
   --color-text: #111;
+  --color-text-secondary: #fff;
   --color-subtext: #222;
-  --color-accent: #2e7d32;
+  --color-accent: #5ba74b;
+  --color-accent-hover: #4b873b;
   --color-border: #bbb;
   --color-top-title: #fff;
   --color-footer-text: #fff;

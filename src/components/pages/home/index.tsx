@@ -1,13 +1,19 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./index.module.css";
 import { SectionTitle } from "@/components/ui/section-title";
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { useTranslations } from "next-intl";
+import { useRouter } from "next/navigation";
 
 export default function HomePage() {
   return (
     <div>
       <HeroSection />
       <MessageSection />
+      <ResearchThemeSection />
     </div>
   );
 }
@@ -39,6 +45,43 @@ const MessageSection = () => {
         <p>{t("message.content1")}</p>
         <p>{t("message.content2")}</p>
       </div>
+    </div>
+  );
+};
+
+const ResearchThemeSection = () => {
+  const t = useTranslations("top.researchTheme");
+  const router = useRouter();
+  return (
+    <div className={styles.researchTheme}>
+      <SectionTitle label={t("title")} />
+      <div className={styles.row}>
+        <Card
+          src="/top/researchTheme/1.png"
+          alt="研究テーマ1"
+          title={t("theme1.title")}
+          description={t("theme1.description")}
+        />
+        <Card
+          src="/top/researchTheme/1.png"
+          alt="研究テーマ1"
+          title={t("theme1.title")}
+          description={t("theme1.description")}
+        />
+        <Card
+          src="/top/researchTheme/1.png"
+          alt="研究テーマ1"
+          title={t("theme1.title")}
+          description={t("theme1.description")}
+        />
+      </div>
+      <Button
+        label={t("button")}
+        variant="primary"
+        onClick={() => {
+          router.push("/theme");
+        }}
+      />
     </div>
   );
 };

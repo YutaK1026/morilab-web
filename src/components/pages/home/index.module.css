@@ -35,3 +35,20 @@
   max-width: 65ch; /* 読みやすい横幅に制限（任意） */
   text-align: center;
 }
+
+.researchTheme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 60px 20px 60px 20px;
+  background-color: var(--color-bg-secondary);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap; /* 幅が足りなければ自動改行 */
+  justify-content: center; /* 中央寄せ */
+  gap: 2.5rem; /* カード間の間隔 */
+  padding-block: 2rem; /* セクションの上下余白：任意 */
+}
