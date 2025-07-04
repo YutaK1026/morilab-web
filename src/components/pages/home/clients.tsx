@@ -5,12 +5,33 @@ import { useRouter, usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { SectionTitle } from "@/components/ui/section-title";
-import styles from "./index.module.css";
+import Image from "next/image";
+import styles from "./clients.module.css";
 import { News } from "@/lib/microcms";
-import { NewsList } from "./newslist";
+import { NewsList } from "@/components/ui/newslist";
 
 type I18nSectionsProps = {
   news: News[];
+};
+
+export const HeroSection = () => {
+  return (
+    <div className={styles.hero}>
+      <Image
+        src="/top/main.png"
+        alt="研究室のトップ画像"
+        fill
+        priority // LCP 対策
+        sizes="100vw"
+        style={{ objectFit: "cover" }}
+      />
+      <h1 className={styles.title}>
+        <span>名古屋大学情報学研究科</span>
+        <br />
+        森研究室
+      </h1>
+    </div>
+  );
 };
 
 export const MessageSection = () => {
