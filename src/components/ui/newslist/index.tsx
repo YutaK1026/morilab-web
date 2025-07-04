@@ -6,7 +6,9 @@ export const NewsList = ({ news }: { news: News[] }) => {
     <section className={styles.list}>
       {news.map(({ id, date, title }) => (
         <div key={id} className={styles.row}>
-          <time className={styles.date}>{date.replace(/-/g, "/")}</time>
+          <time className={styles.date}>
+            {date.replace(/-/g, "/").replace(/T.*$/, "")}
+          </time>
           <span className={styles.title}>{title}</span>
         </div>
       ))}

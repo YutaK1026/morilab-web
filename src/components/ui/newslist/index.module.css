@@ -2,17 +2,19 @@
   margin-inline: auto;
   padding: 2rem 1rem;
   max-width: 960px;
+  width: 70%;
   font-family: "JetBrains Mono", monospace;
 }
 
 .row {
   display: flex;
-  gap: 1.5rem;
-  padding-block: 0.75rem;
+  gap: 54px;
+  padding-block: 1rem;
   border-bottom: 1px solid #aaa;
-  font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+  font-size: 24px;
 }
 
+/* ---- PC 幅 ---- */
 .date {
   flex: 0 0 110px;
 }
@@ -21,4 +23,20 @@
 }
 .title {
   flex: 1 1 auto;
+}
+
+/* ---- スマホ幅で縦並びに ---- */
+@media (max-width: 640px) {
+  .row {
+    flex-direction: column; /* 縦積み */
+    gap: 0.5rem; /* 行間を狭める */
+    font-size: 18px; /* 任意：文字を少し小さく */
+  }
+
+  /* 幅固定を解除して自然幅に */
+  .date,
+  .author,
+  .title {
+    flex: none;
+  }
 }
