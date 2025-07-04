@@ -6,7 +6,7 @@ import createNextIntlPlugin from "next-intl/plugin";
  * 必要なら locales / defaultLocale をここで指定
  *   – App Router なので `localePrefix: 'as-needed'` が推奨
  * ──────────────────────────────────────────── */
-const withNextIntl = createNextIntlPlugin();
+const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
 /** ─────────────────────────────────────────────
  * Next.js の基本設定
