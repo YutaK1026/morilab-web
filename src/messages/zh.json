@@ -26,5 +26,11 @@
       "title": "最新新闻",
       "button": "详细信息"
     }
+  },
+  "about": {
+    "title": "研究室介绍",
+    "professor": {
+      "title": "森研究室教员"
+    }
   }
 }

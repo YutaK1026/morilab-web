@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import { useRouter, usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { SectionTitle } from "@/components/ui/section-title";
+import { PageTitle } from "@/components/ui/page-title";
 import Image from "next/image";
 import styles from "./clients.module.css";
 import { News } from "@/lib/microcms";
@@ -38,7 +38,7 @@ export const MessageSection = () => {
   const t = useTranslations("top");
   return (
     <div className={styles.message}>
-      <SectionTitle label={t("message.title")} />
+      <PageTitle label={t("message.title")} />
       <div className={styles.messageContent}>
         <p>{t("message.content1")}</p>
         <p>{t("message.content2")}</p>
@@ -59,7 +59,7 @@ export const ResearchThemeSection = () => {
 
   return (
     <div className={styles.researchTheme}>
-      <SectionTitle label={t("title")} />
+      <PageTitle label={t("title")} />
       <div className={styles.row}>
         <Card
           src="/top/researchTheme/1.png"
@@ -104,7 +104,7 @@ export const NewsSection = ({ news }: I18nSectionsProps) => {
 
   return (
     <div className={styles.news}>
-      <SectionTitle label={t("title")} />
+      <PageTitle label={t("title")} />
       <NewsList news={news} />
       <Button
         label={t("button")}

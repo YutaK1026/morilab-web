@@ -45,7 +45,7 @@ export default function Header({ lang }: { lang: string }) {
   };
 
   const isActive = (href: string) => {
-    const localePrefix = lang === "ja" ? "" : `/${lang}`;
+    const localePrefix = lang === `/${lang}`;
     const fullPath = localePrefix + href;
     return (
       pathname === fullPath || (href !== "/" && pathname.startsWith(fullPath))

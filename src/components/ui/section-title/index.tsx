@@ -1,14 +1,15 @@
 import styles from "./index.module.css";
 
-type SectionTitleProps = {
-  label: string;
-  size?: "sm" | "md" | "lg";
-};
+type Size = "lg" | "md" | "sm";
 
-export const SectionTitle = ({ label, size = "md" }: SectionTitleProps) => (
-  <div className={`${styles.wrapper} ${styles[size]}`}>
-    <span className={styles.line} />
-    <span className={styles.text}>{label}</span>
-    <span className={styles.line} />
+interface Props {
+  label: string;
+  size?: Size;
+}
+
+/** セクション用見出し */
+export const SectionHeader: React.FC<Props> = ({ label, size = "md" }) => (
+  <div className={styles.sectionHeader}>
+    <h2 className={`${styles.header} ${styles[size]}`}>{label}</h2>
   </div>
 );

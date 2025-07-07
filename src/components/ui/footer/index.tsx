@@ -21,6 +21,15 @@ const IMAGES = [
   { src: "/top/main.png", alt: "img6" },
 ];
 
+const getLocalePath = (href: string) => {
+  const langs =
+    href
+      .replace(/^\/(ja|en|zh)(\/|$)/, "/")
+      .split("/")
+      .filter(Boolean)[0] ?? "";
+  return langs;
+};
+
 export default async function Footer() {
   const t = await getTranslations("header");
   return (
@@ -28,7 +37,11 @@ export default async function Footer() {
       <div className={styles.footerContent}>
         <nav className={styles.footerNav}>
           {NAV_LINKS.map((link) => (
-            <a key={link.href} href={link.href} className={styles.footerLink}>
+            <a
+              key={link.href}
+              href={getLocalePath(link.href)}
+              className={styles.footerLink}
+            >
               {t(link.label)}
             </a>
           ))}

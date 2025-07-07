@@ -1,26 +1,51 @@
-.wrapper {
+/* セクション用見出し 左寄せ */
+.sectionHeader {
   display: flex;
-  align-items: center;
-  gap: 12px; /* 罫線と文字の間隔 */
+  flex-direction: column;
+  align-items: left;
+  gap: 3rem;
+  width: 90%;
 }
 
-.line {
-  flex: 0 0 60px;
-  height: 2px;
-  background: var(--color-accent);
-}
-
-.text {
+.header {
+  position: relative;
+  display: inline-block; /* テキスト幅＝線の長さ */
+  margin: 0 0 0.75rem;
   font-weight: 700;
+  border-bottom: 2px solid var(--color-accent);
 }
 
-/* ──サイズ切替── */
-.sm .text {
-  font-size: 24px;
+/* --- size variants --- */
+.header.lg {
+  font-size: 2rem;
 }
-.md .text {
-  font-size: 32px;
+.header.lg::after {
+  height: 4px;
 }
-.lg .text {
-  font-size: 40px;
+
+.header.md {
+  font-size: 1.5rem;
+} /* デフォルト */
+.header.md::after {
+  height: 3px;
+}
+
+.header.sm {
+  font-size: 1.125rem;
+}
+.header.sm::after {
+  height: 2px;
+}
+
+/* ---- スマホは文字を小さく ---- */
+@media (max-width: 640px) {
+  .header.lg {
+    font-size: 1.5rem;
+  }
+  .header.md {
+    font-size: 1.25rem;
+  }
+  .header.sm {
+    font-size: 1rem;
+  }
 }

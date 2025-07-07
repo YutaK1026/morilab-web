@@ -26,5 +26,11 @@
       "title": "Latest News",
       "button": "View more"
     }
+  },
+  "about": {
+    "title": "About",
+    "professor": {
+      "title": "Professors in Morilab"
+    }
   }
 }
