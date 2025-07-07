@@ -17,21 +17,21 @@
 
 /* --- size variants --- */
 .header.lg {
-  font-size: 2rem;
+  font-size: var(--font-size-xlg);
 }
 .header.lg::after {
   height: 4px;
 }
 
 .header.md {
-  font-size: 1.5rem;
+  font-size: var(--font-size-lg);
 } /* デフォルト */
 .header.md::after {
   height: 3px;
 }
 
 .header.sm {
-  font-size: 1.125rem;
+  font-size: var(--font-size-md);
 }
 .header.sm::after {
   height: 2px;
@@ -40,12 +40,12 @@
 /* ---- スマホは文字を小さく ---- */
 @media (max-width: 640px) {
   .header.lg {
-    font-size: 1.5rem;
+    font-size: var(--font-size-xlg);
   }
   .header.md {
-    font-size: 1.25rem;
+    font-size: var(--font-size-lg);
   }
   .header.sm {
-    font-size: 1rem;
+    font-size: var(--font-size-md);
   }
 }

@@ -10,4 +10,20 @@
   --color-top-title: #fff;
   --color-footer-text: #fff;
   --color-footer-bg: #757575;
+
+  /* PC版フォントサイズ */
+  --font-size-xlg: 32px;
+  --font-size-lg: 24px;
+  --font-size-md: 20px;
+  --font-size-sm: 16px;
+}
+
+/* SP版フォントサイズ */
+@media (max-width: 768px) {
+  :root {
+    --font-size-xlg: 24px;
+    --font-size-lg: 20px;
+    --font-size-md: 16px;
+    --font-size-sm: 12px;
+  }
 }

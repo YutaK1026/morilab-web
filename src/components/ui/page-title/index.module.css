@@ -16,10 +16,10 @@
 
 /* ──サイズ切替── */
 .sm .text {
-  font-size: 24px;
+  font-size: var(--font-size-lg);
 }
 .md .text {
-  font-size: 32px;
+  font-size: var(--font-size-xlg);
 }
 .lg .text {
   font-size: 40px;
@@ -28,12 +28,12 @@
 /* ---- スマホは文字を小さく ---- */
 @media (max-width: 640px) {
   .lg .text {
-    font-size: 32px;
+    font-size: var(--font-size-xlg);
   }
   .md .text {
-    font-size: 24px;
+    font-size: var(--font-size-lg);
   }
   .sm .text {
-    font-size: 18px;
+    font-size: var(--font-size-md);
   }
 }

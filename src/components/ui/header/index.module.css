@@ -32,14 +32,14 @@
 }
 
 .mainTitle {
-  font-size: 2rem;
+  font-size: var(--font-size-xlg);
   font-weight: bold;
   margin: 0;
   line-height: 1.1;
 }
 
 .subTitle {
-  font-size: 1.1rem;
+  font-size: var(--font-size-sm);
   font-weight: 500;
   color: var(--color-subtext, #222);
   margin-top: 2px;
@@ -54,7 +54,7 @@
 }
 
 .navLink {
-  font-size: 1.25rem;
+  font-size: var(--font-size-md);
   color: var(--color-text, #111);
   text-decoration: none;
   padding-bottom: 2px;
@@ -73,7 +73,7 @@
 
 .langSelect select {
   font-family: "JetBrains Mono", monospace;
-  font-size: 1.1rem;
+  font-size: var(--font-size-sm);
   padding: 6px 16px;
   border: 1px solid var(--color-border, #bbb);
   border-radius: 8px;
@@ -173,10 +173,10 @@
     height: 40px;
   }
   .mainTitle {
-    font-size: 1.3rem;
+    font-size: var(--font-size-lg);
   }
   .subTitle {
-    font-size: 0.95rem;
+    font-size: var(--font-size-sm);
   }
   .nav {
     gap: 20px;

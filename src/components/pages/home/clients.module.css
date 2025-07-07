@@ -10,7 +10,11 @@
   bottom: 24px;
   right: 24px;
   color: var(--color-top-title);
-  font-size: clamp(24px, 4vw, 48px); /* 画面幅に応じ可変 */
+  font-size: clamp(
+    var(--font-size-lg),
+    4vw,
+    var(--font-size-xlg)
+  ); /* 画面幅に応じ可変 */
   font-weight: 700;
   line-height: 1.3;
   text-align: right;

@@ -29,6 +29,8 @@
   flex-direction: column;
   gap: 0.5rem;
   align-items: flex-start;
+  font-family: "JetBrains Mono", monospace;
+  font-size: var(--font-size-md);
 }
 
 .professorImage {
@@ -42,4 +44,39 @@
     max-height: 400px;
     object-fit: contain;
   }
+}
+
+.messageSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 40px 20px 40px 20px;
+}
+
+.messageContainer {
+  width: 80%;
+  text-align: justify;
+  font-size: var(--font-size-md);
+  font-family: "JetBrains Mono", monospace;
+}
+
+.entrySection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 40px 20px 40px 20px;
+}
+
+.entryContainer {
+  width: 80%;
+  gap: 0.5rem;
+  align-items: flex-start;
+  font-family: "JetBrains Mono", monospace;
+  padding-bottom: 16px;
+}
+.entryDescription {
+  width: 100%;
+  font-size: var(--font-size-md);
 }

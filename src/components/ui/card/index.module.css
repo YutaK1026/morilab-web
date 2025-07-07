@@ -20,7 +20,7 @@
   text-align: center;
   line-height: 1.4;
   font-family: "JetBrains Mono", monospace;
-  font-size: 20px;
+  font-size: var(--font-size-md);
 }
 
 .desc {
@@ -28,5 +28,5 @@
   line-height: 1.6;
   max-width: 32ch;
   font-family: "JetBrains Mono", monospace;
-  font-size: 16px;
+  font-size: var(--font-size-sm);
 }

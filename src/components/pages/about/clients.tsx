@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import { SectionHeader } from "@/components/ui/section-title";
 import Image from "next/image";
 
+/* タイトル */
 export const TitleSection = () => {
   const t = useTranslations("about");
   return (
@@ -42,6 +43,43 @@ export const ProfessorSection = () => {
             <p>{t("mail")}</p>
             <p>{t("description")}</p>
           </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+/* 研究室からのメッセージ */
+export const MessageSection = () => {
+  const t = useTranslations("about.message");
+  return (
+    <div className={styles.messageSection}>
+      <SectionHeader label={t("title")} size="lg" />
+      <div className={styles.messageContainer}>
+        <p>{t("message")}</p>
+      </div>
+    </div>
+  );
+};
+
+/* 研究室の配属について */
+export const EntrySection = () => {
+  const t = useTranslations("about.entry");
+  return (
+    <div className={styles.entrySection}>
+      <SectionHeader label={t("title")} size="lg" />
+      <div className={styles.entryContainer}>
+        <SectionHeader label={t("bachelor.title")} size="md" />
+        <div className={styles.entryDescription}>
+          <p>{t("bachelor.description")}</p>
+        </div>
+        <SectionHeader label={t("master.title")} size="md" />
+        <div className={styles.entryDescription}>
+          <p>{t("master.description")}</p>
+        </div>
+        <SectionHeader label={t("doctor.title")} size="md" />
+        <div className={styles.entryDescription}>
+          <p>{t("doctor.description")}</p>
         </div>
       </div>
     </div>
