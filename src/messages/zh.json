@@ -53,6 +53,11 @@
         "title": "研究生（博士）",
         "description": "您应该向名古屋大学大学院信息学研究科的智能系统博士课程提出申请。届时，请申请派往森实验室工作。"
       }
+    },
+    "path": {
+      "title": "毕业生就业去向（按姓名和年份顺序，包括旧末永研究室毕业生）",
+      "description": "毕业生在汽车、电机、通信、运输等行业广泛就业。当然，也有活跃在医用图像处理相关研究开发的公司中的前辈。博士课程后期课程（俗称博士课程）的毕业生不仅在大学，而且在企业中也活跃。",
+      "example": "示例：DENSO、Canon、Toyota、Brother、Ricoh、Toyota Auto、Suzuki、Fujitsu、NTT、Fuji Film、Omron、Sony、IBM、Panasonic 等"
     }
   }
 }

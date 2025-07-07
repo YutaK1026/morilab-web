@@ -53,6 +53,11 @@
         "title": "Graduate Student (Doctor)",
         "description": "Please take the entrance exam to the Doctoral Course of the Graduate School of Information Science and Technology, Nagoya University. Please also apply to Morilab."
       }
+    },
+    "path": {
+      "title": "Example of Graduates' Paths (Name and Year in no particular order. Includes graduates from the old Morilab.)",
+      "description": "Graduates are active in a wide range of industries such as automobiles, electrical equipment, communication, and transportation. Of course, there are also graduates who are active in companies that are related to medical image processing.",
+      "example": "Example: DENSO, Canon, Toyota, Brother, Ricoh, Toyota Auto, Suzuki, Fujitsu, NTT, Fuji Film, Omron, Sony, IBM, Panasonic, etc."
     }
   }
 }

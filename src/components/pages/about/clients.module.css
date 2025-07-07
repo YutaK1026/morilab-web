@@ -4,6 +4,10 @@
   align-items: center;
   gap: 3rem;
   padding: 60px 20px 60px 20px;
+
+  @media (max-width: 640px) {
+    padding: 40px 20px 40px 20px;
+  }
 }
 
 .professorSection {
@@ -21,6 +25,7 @@
   /* スマホ：縦並び */
   @media (max-width: 640px) {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 }
 
@@ -74,9 +79,33 @@
   gap: 0.5rem;
   align-items: flex-start;
   font-family: "JetBrains Mono", monospace;
-  padding-bottom: 16px;
 }
 .entryDescription {
   width: 100%;
   font-size: var(--font-size-md);
+}
+
+.pathSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 40px 20px 40px 20px;
+}
+
+.pathContainer {
+  width: 80%;
+  font-size: var(--font-size-md);
+  font-family: "JetBrains Mono", monospace;
+  gap: 1.5rem;
+}
+.pathDescription {
+  padding-bottom: 16px;
+  font-size: var(--font-size-md);
+  font-family: "JetBrains Mono", monospace;
+}
+.pathExample {
+  padding-bottom: 24px;
+  font-size: var(--font-size-md);
+  font-family: "JetBrains Mono", monospace;
 }

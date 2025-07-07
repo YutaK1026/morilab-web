@@ -85,3 +85,17 @@ export const EntrySection = () => {
     </div>
   );
 };
+
+/* 研究室生の進路 */
+export const PathSection = () => {
+  const t = useTranslations("about.path");
+  return (
+    <div className={styles.pathSection}>
+      <SectionHeader label={t("title")} size="lg" />
+      <div className={styles.pathContainer}>
+        <p className={styles.pathDescription}>{t("description")}</p>
+        <p className={styles.pathExample}>{t("example")}</p>
+      </div>
+    </div>
+  );
+};

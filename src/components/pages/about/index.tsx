@@ -4,6 +4,7 @@ import {
   ProfessorSection,
   MessageSection,
   EntrySection,
+  PathSection,
 } from "./clients";
 
 export default function AboutPage() {
@@ -13,6 +14,7 @@ export default function AboutPage() {
       <ProfessorSection />
       <MessageSection />
       <EntrySection />
+      <PathSection />
     </div>
   );
 }
