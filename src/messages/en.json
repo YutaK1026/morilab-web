@@ -59,5 +59,17 @@
       "description": "Graduates are active in a wide range of industries such as automobiles, electrical equipment, communication, and transportation. Of course, there are also graduates who are active in companies that are related to medical image processing.",
       "example": "Example: DENSO, Canon, Toyota, Brother, Ricoh, Toyota Auto, Suzuki, Fujitsu, NTT, Fuji Film, Omron, Sony, IBM, Panasonic, etc."
     }
+  },
+  "theme": {
+    "title": "Research Theme",
+    "imageRecognition": {
+      "title": "1. Image Recognition, Understanding, and Computer Vision",
+      "content": "Use PC to analyze medical images and connect to cancer detection and density structure analysis"
+    },
+    "imageGeneration": {
+      "title": "2. Image Generation, Visualization Technology (Computer Graphics)",
+      "content": "Use PC to analyze medical images and connect to cancer detection and density structure analysis",
+      "imageDescription": "Visualization of a large-scale turbulent flow obtained by a supercomputer"
+    }
   }
 }

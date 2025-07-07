@@ -59,5 +59,17 @@
       "description": "毕业生在汽车、电机、通信、运输等行业广泛就业。当然，也有活跃在医用图像处理相关研究开发的公司中的前辈。博士课程后期课程（俗称博士课程）的毕业生不仅在大学，而且在企业中也活跃。",
       "example": "示例：DENSO、Canon、Toyota、Brother、Ricoh、Toyota Auto、Suzuki、Fujitsu、NTT、Fuji Film、Omron、Sony、IBM、Panasonic 等"
     }
+  },
+  "theme": {
+    "title": "研究主题",
+    "imageRecognition": {
+      "title": "1. 图像识别、理解、计算机视觉",
+      "content": "使用PC分析医学图像，并将其与癌症检测和密度结构分析联系起来"
+    },
+    "imageGeneration": {
+      "title": "2. 图像生成, 可视化技术(计算机图形学)",
+      "content": "使用PC分析医学图像，并将其与癌症检测和密度结构分析联系起来",
+      "imageDescription": "使用超级计算机获得的大规模湍流场的可视化"
+    }
   }
 }

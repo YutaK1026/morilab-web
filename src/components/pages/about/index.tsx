@@ -1,4 +1,3 @@
-import styles from "./index.module.css";
 import {
   TitleSection,
   ProfessorSection,
@@ -9,7 +8,7 @@ import {
 
 export default function AboutPage() {
   return (
-    <div className={styles.page}>
+    <div>
       <TitleSection />
       <ProfessorSection />
       <MessageSection />
