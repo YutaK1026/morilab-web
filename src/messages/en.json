@@ -30,7 +30,10 @@
   "about": {
     "title": "About",
     "professor": {
-      "title": "Professors in Morilab"
+      "title": "Professors in Morilab",
+      "name": "Professor Kensaku Mori",
+      "mail": "kensaku (at) is.nagoya-u.ac.jp",
+      "description": "((at) is replaced with @)"
     }
   }
 }

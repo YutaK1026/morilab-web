@@ -13,3 +13,33 @@
   gap: 3rem;
   padding: 40px 20px 40px 20px;
 }
+.container {
+  display: grid;
+  grid-template-columns: minmax(0, 300px) 1fr;
+  gap: 4rem;
+
+  /* スマホ：縦並び */
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.containerRight {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
+.professorImage {
+  inline-size: 100%; /* 幅いっぱいに拡縮 */
+  max-block-size: 400px; /* 高さ上限 */
+
+  img {
+    /* Next.js <Image> が出力する <img> */
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+  }
+}

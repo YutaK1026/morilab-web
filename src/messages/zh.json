@@ -30,7 +30,10 @@
   "about": {
     "title": "研究室介绍",
     "professor": {
-      "title": "森研究室教员"
+      "title": "森研究室教员",
+      "name": "教授 森 健策",
+      "mail": "kensaku (at) is.nagoya-u.ac.jp",
+      "description": "((at) 是 @ 的替换)"
     }
   }
 }
