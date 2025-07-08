@@ -70,6 +70,47 @@
       "title": "2. 图像生成, 可视化技术(计算机图形学)",
       "content": "使用PC分析医学图像，并将其与癌症检测和密度结构分析联系起来",
       "imageDescription": "使用超级计算机获得的大规模湍流场的可视化"
+    },
+    "medicalApplication": {
+      "title": "3. 医疗领域的应用",
+      "3dPrinter": {
+        "title": "利用3D打印制造的人体器官模型",
+        "content": "在医疗领域，3D打印的应用正不断拓展，涵盖了植入物制造、诊断支持、手术模拟、手术导航、知情同意以及医学护理教育等多个方面。",
+        "imageDescription1": "通过形状暴露法制造的肾脏模型",
+        "imageDescription2": "通过形状暴露法制造的微血管结构模型"
+      },
+      "virtualEndoscope": {
+        "title": "虚拟内窥镜",
+        "content": "该技术基于CT或MR图像生成仿佛通过内窥镜观察得到的图像。自1993年起持续进行研究，并发表了首篇关于可实时交互的虚拟内窥镜的论文。",
+        "imageDescription1": "1995年当时的虚拟内窥镜系统",
+        "imageDescription2": "现在的虚拟内窥镜系统。如果您想评估，请通过电子邮件与我们联系。"
+      },
+      "medicalImageRecognition": {
+        "title": "医疗图像识别",
+        "content": "研究对象包括支气管、腹部器官和淋巴结。针对支气管，开展了从CT图像中分割支气管区域的研究，以及为已抽取的支气管分支自动标注解剖学名称的研究。针对腹部器官，开展了从腹部CT图像中自动且同时检测各类器官的研究。针对淋巴结，开展了从CT图像中检测淋巴结的研究。",
+        "imageDescription1": "気管支領域の抽出結果",
+        "imageDescription2": "気管支領域の各枝に名称を付与した結果",
+        "imageDescription3": "腹部臓器のセグメンテーション結果",
+        "imageDescription4": "リンパ節の検出結果"
+      },
+      "cad": {
+        "title": "计算机辅助诊断/自动诊断（CAD）",
+        "content": "在计算机辅助诊断/自动诊断方面，主要研究支持肺癌、肺气肿和结肠息肉诊断的系统。",
+        "imageDescription1": "肺がんCADのシステム",
+        "imageDescription2": "肺気腫CADのシステム",
+        "imageDescription3": "大腸診断支援システム"
+      },
+      "surgerySimulation": {
+        "title": "手术模拟",
+        "content": "在腹腔镜手术模拟方面，可以在手术前进行术前模拟。此外，还进行了用于先天性肛门闭锁手术支持的婴幼儿臀部切开模拟等研究。",
+        "imageDescription1": "腹腔镜手术的模拟",
+        "imageDescription2": "婴幼儿臀部切开模拟"
+      },
+      "humanInteraction": {
+        "title": "探索人类视觉、思考与行为机制",
+        "content": "通过利用虚拟现实（实现虚拟世界的技术），尝试将其应用于医学领域。开发了可让人完全沉浸于人体内部的虚拟现实系统，并被《News Station》和《Science Eye》等节目报道。",
+        "imageDescription1": "大腸内視鏡のバーチャルリアリティー"
+      }
     }
   }
 }

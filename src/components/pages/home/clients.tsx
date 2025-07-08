@@ -14,6 +14,7 @@ type I18nSectionsProps = {
   news: News[];
 };
 
+/* トップページのヒーローセクション */
 export const HeroSection = () => {
   return (
     <div className={styles.hero}>
@@ -34,6 +35,7 @@ export const HeroSection = () => {
   );
 };
 
+/* メッセージ */
 export const MessageSection = () => {
   const t = useTranslations("top");
   return (
@@ -47,6 +49,7 @@ export const MessageSection = () => {
   );
 };
 
+/* 研究テーマ */
 export const ResearchThemeSection = () => {
   const t = useTranslations("top.researchTheme");
   const router = useRouter();
@@ -92,6 +95,7 @@ export const ResearchThemeSection = () => {
   );
 };
 
+/* お知らせ */
 export const NewsSection = ({ news }: I18nSectionsProps) => {
   const t = useTranslations("top.news");
   const router = useRouter();

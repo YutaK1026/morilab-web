@@ -16,11 +16,15 @@
   align-items: center;
   gap: 3rem;
   padding: 60px 20px 60px 20px;
+  @media (max-width: 640px) {
+    padding: 20px 20px 20px 20px;
+  }
 }
 .messageContainer {
   width: 80%;
   font-size: var(--font-size-md);
   font-family: "JetBrains Mono", monospace;
+  white-space: pre-line;
 }
 .imageContainer {
   display: flex;
@@ -28,8 +32,40 @@
   align-items: center;
   gap: 1rem;
   width: 80%;
+  @media (max-width: 640px) {
+    width: 100%;
+  }
 }
 .imageDescription {
   font-size: var(--font-size-sm);
   font-family: "JetBrains Mono", monospace;
+  text-align: center;
+  white-space: pre-line; /* ← 改行文字をそのまま改行に */
+}
+.sectionContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 80%;
+}
+.imageRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 24px;
+  place-items: center;
+  width: 100%;
+
+  @media (max-width: 600px) {
+    display: block;
+    gap: 1rem;
+    padding: 0;
+    justify-items: center; /* 左右中央 */
+
+    /* 各画像ブロックも親幅いっぱい */
+    .imageContainer {
+      width: 100%;
+    }
+  }
 }

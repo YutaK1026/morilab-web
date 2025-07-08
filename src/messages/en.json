@@ -70,6 +70,47 @@
       "title": "2. Image Generation, Visualization Technology (Computer Graphics)",
       "content": "Use PC to analyze medical images and connect to cancer detection and density structure analysis",
       "imageDescription": "Visualization of a large-scale turbulent flow obtained by a supercomputer"
+    },
+    "medicalApplication": {
+      "title": "3. Application to the Medical Field",
+      "3dPrinter": {
+        "title": "Use of 3D-printed human organ models",
+        "content": "The use of 3D printers in the medical field is diverse, including implant creation, diagnosis support, surgery simulation, surgery navigation, informed consent, and medical nursing education.",
+        "imageDescription1": "Kidney model created by shape exposure method",
+        "imageDescription2": "Model of microvascular structure created by shape exposure method"
+      },
+      "virtualEndoscope": {
+        "title": "Virtual Endoscopy",
+        "content": "This is a technique that generates images as if they were observed with an endoscope based on CT or MR images. We have been conducting research on this continuously since 1993. We have also published the first paper on real-time interactive virtual endoscopy (virtual endoscopy).",
+        "imageDescription1": "Virtual endoscopy system at the time",
+        "imageDescription2": "Current virtual endoscopy system. If you would like to evaluate, please contact us by email."
+      },
+      "medicalImageRecognition": {
+        "title": "Medical Image Recognition",
+        "content": "The target domains are airways, abdominal organs, and lymph nodes. For the airways, we are conducting research on extracting the airway region from CT images (segmentation) and automatically assigning anatomical names to each branch of the extracted airway region. For abdominal organs, we are conducting research on automatically detecting various organs from abdominal CT images at the same time. For lymph nodes, we are conducting research on detecting lymph nodes from CT images.",
+        "imageDescription1": "Extraction result of airway region",
+        "imageDescription2": "Result of assigning anatomical names to each branch of the extracted airway region",
+        "imageDescription3": "Segmentation result of abdominal organs",
+        "imageDescription4": "Detection result of lymph nodes"
+      },
+      "cad": {
+        "title": "Computer-aided diagnosis and automatic diagnosis (CAD)",
+        "content": "We are conducting research on systems that support the diagnosis of lung cancer, emphysema, and colorectal polyps.",
+        "imageDescription1": "Lung cancer CAD system",
+        "imageDescription2": "Emphysema CAD system",
+        "imageDescription3": "Colorette diagnosis support system"
+      },
+      "surgerySimulation": {
+        "title": "Surgery Simulation",
+        "content": "In laparoscopic surgery simulation, preoperative simulation is possible before laparoscopic surgery. We are also conducting simulation of laparoscopic surgery for rectal surgery and simulation of laparoscopic surgery for rectal surgery.",
+        "imageDescription1": "Laparoscopic surgery simulation",
+        "imageDescription2": "Simulation of laparoscopic surgery for rectal surgery"
+      },
+      "humanInteraction": {
+        "title": "Exploration of the mechanisms of human vision, thinking, and behavior",
+        "content": "By using virtual reality (virtual world realization technology), we are trying to apply virtual reality technology to medical applications. We have developed a virtual reality system that can be completely immersed in the human body, and it has been featured in news stations and science channels.",
+        "imageDescription1": "Virtual reality system that can be completely immersed in the human body"
+      }
     }
   }
 }

@@ -2,6 +2,7 @@ import {
   TitleSection,
   ImageRecognitionSection,
   ImageGenerationSection,
+  MedicalApplicationSection,
 } from "./clients";
 
 export default function ThemePage() {
@@ -10,6 +11,7 @@ export default function ThemePage() {
       <TitleSection />
       <ImageRecognitionSection />
       <ImageGenerationSection />
+      <MedicalApplicationSection />
     </div>
   );
 }
