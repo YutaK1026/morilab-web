@@ -1,5 +1,5 @@
 import styles from "./page.module.css";
-import MemberPage from "@/components/pages/member";
+import MemberPage from "@/components/pages/members";
 
 // 完全な静的生成のための設定
 export const dynamic = "force-static";

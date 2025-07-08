@@ -1,4 +1,4 @@
-import ThemePage from "@/components/pages/theme";
+import ThemePage from "@/components/pages/themes";
 import styles from "./page.module.css";
 export default function Theme() {
   return (
