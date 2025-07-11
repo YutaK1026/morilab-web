@@ -114,18 +114,23 @@
 
 /* レスポンシブ対応 */
 @media (max-width: 640px) {
+  .section {
+    padding: 40px 20px 40px 20px;
+  }
   .titleSection {
     padding: 40px 20px 40px 20px;
     gap: 2rem;
   }
-
+  .border {
+    margin-top: 1rem;
+  }
   .yearList {
     gap: 0.5rem;
   }
 
   .yearLink {
     padding: 0.4rem 0.8rem;
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-md);
   }
 
   .postGroup {
@@ -138,6 +143,6 @@
 
   .memberList li {
     padding: 0.2rem 0.6rem;
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-md);
   }
 }

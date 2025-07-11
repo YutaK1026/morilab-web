@@ -64,7 +64,7 @@ export default function Header({ lang }: { lang: string }) {
             height={64}
           />
           <div className={styles.titles}>
-            <h1 className={styles.mainTitle}>森研究室</h1>
+            <div className={styles.mainTitle}>森研究室</div>
             <span className={styles.subTitle}>
               Medical Image Processing Research
             </span>

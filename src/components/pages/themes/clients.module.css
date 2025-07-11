@@ -34,6 +34,7 @@
   width: 80%;
   @media (max-width: 640px) {
     width: 100%;
+    padding-bottom: 1rem;
   }
 }
 .imageDescription {
@@ -48,6 +49,9 @@
   align-items: center;
   gap: 1rem;
   width: 80%;
+  @media (max-width: 640px) {
+    width: 90%;
+  }
 }
 .imageRow {
   display: grid;
