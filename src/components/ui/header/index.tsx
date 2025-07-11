@@ -10,9 +10,9 @@ import { useParams } from "next/navigation";
 import Link from "next/link";
 
 const LANGS = [
-  { code: "ja", label: "日本語" },
-  { code: "en", label: "English" },
-  { code: "zh", label: "中文" },
+  { code: "ja", label: "🇯🇵 日本語" },
+  { code: "en", label: "🇺🇸 English" },
+  { code: "zh", label: "🇨🇳 中文" },
 ];
 
 const NAV_LINKS = [
@@ -81,7 +81,7 @@ export default function Header({ lang }: { lang: string }) {
           <select value={lang} onChange={handleLangChange}>
             {routing.locales.map((l) => (
               <option key={l} value={l}>
-                {l}
+                {LANGS.find((lang) => lang.code === l)?.label}
               </option>
             ))}
           </select>
@@ -173,6 +173,7 @@ export default function Header({ lang }: { lang: string }) {
                   ? ` ${styles.navLinkActive}`
                   : "")
               }
+              onClick={() => setMenuOpen(false)}
             >
               {t(link.key)}
             </Link>
@@ -180,9 +181,9 @@ export default function Header({ lang }: { lang: string }) {
         </nav>
         <div className={styles.langSelectMobile}>
           <select value={lang} onChange={handleLangChange}>
-            {LANGS.map((l) => (
-              <option key={l.code} value={l.code}>
-                {l.label}
+            {routing.locales.map((l) => (
+              <option key={l} value={l}>
+                {LANGS.find((lang) => lang.code === l)?.label}
               </option>
             ))}
           </select>
