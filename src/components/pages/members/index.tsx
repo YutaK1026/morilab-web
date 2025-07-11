@@ -1,4 +1,4 @@
-import { MemberSection, TitleSection, YearSelector } from "./clients";
+import { MemberSection, TitleSection, YearSelectorSection } from "./clients";
 
 type MemberPageProps = {
   members: Record<string, Record<string, string[]>>;
@@ -15,7 +15,7 @@ export default async function MemberPage({
     <div>
       <TitleSection />
       <MemberSection members={members} selectedYear={currentYear} />
-      <YearSelector members={members} selectedYear={currentYear} />
+      <YearSelectorSection members={members} selectedYear={currentYear} />
     </div>
   );
 }

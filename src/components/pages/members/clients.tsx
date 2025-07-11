@@ -11,6 +11,7 @@ type MemberSectionProps = {
   selectedYear: string;
 };
 
+/* タイトル */
 export const TitleSection = () => {
   const t = useTranslations("member");
 
@@ -21,6 +22,7 @@ export const TitleSection = () => {
   );
 };
 
+/* メンバ一覧表示 */
 export const MemberSection = ({
   members,
   selectedYear,
@@ -53,7 +55,11 @@ export const MemberSection = ({
   );
 };
 
-export const YearSelector = ({ members, selectedYear }: MemberSectionProps) => {
+/* 年度選択 */
+export const YearSelectorSection = ({
+  members,
+  selectedYear,
+}: MemberSectionProps) => {
   const t = useTranslations("member");
   const params = useParams<{ locale: string; years: string }>();
   const locale = params.locale;
