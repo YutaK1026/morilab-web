@@ -16,13 +16,30 @@ const NAV_LINKS = [
   { href: "/access", label: "access" },
 ];
 
+// フッターに表示させるものを追加したい場合はここに追記する
 const IMAGES = [
-  { src: "/top/main.png", alt: "img1" },
-  { src: "/top/main.png", alt: "img2" },
-  { src: "/top/main.png", alt: "img3" },
-  { src: "/top/main.png", alt: "img4" },
-  { src: "/top/main.png", alt: "img5" },
-  { src: "/top/main.png", alt: "img6" },
+  {
+    src: "/top/footer/miccai.png",
+    alt: "MICCAI",
+    link: "https://conferences.miccai.org/2023/en/workshops.asp",
+  },
+  { src: "/top/footer/mici.png", alt: "MICI", link: "" },
+  {
+    src: "/top/footer/mist.png",
+    alt: "MIST",
+    link: "https://mist-medical.readthedocs.io/en/latest/",
+  },
+  { src: "/top/footer/pluto.png", alt: "PLUTO", link: "" },
+  {
+    src: "/top/footer/計算解剖学.png",
+    alt: "計算解剖学",
+    link: "",
+  },
+  {
+    src: "/top/footer/市民公開講座.png",
+    alt: "市民公開講座",
+    link: "",
+  },
 ];
 
 export default function Footer() {
@@ -52,7 +69,18 @@ export default function Footer() {
                 alt={img.alt}
                 width={180}
                 height={60}
-                style={{ objectFit: "contain" }}
+                style={{
+                  objectFit: "contain",
+                  cursor: "pointer",
+                  width: "100%",
+                  maxWidth: "180px",
+                  height: "auto",
+                }}
+                onClick={() => {
+                  if (img.link) {
+                    window.open(img.link, "_blank");
+                  }
+                }}
               />
             </div>
           ))}
