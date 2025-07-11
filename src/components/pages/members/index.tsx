@@ -1,12 +1,21 @@
-import { TitleSection } from "./clients";
-import { fetchMembers } from "@/lib/microcms";
+import { MemberSection, TitleSection, YearSelector } from "./clients";
 
-export default async function MemberPage() {
-  const members = await fetchMembers();
-  console.log(members);
+type MemberPageProps = {
+  members: Record<string, Record<string, string[]>>;
+  selectedYear?: string;
+};
+
+export default async function MemberPage({
+  members,
+  selectedYear,
+}: MemberPageProps) {
+  const currentYear = selectedYear || Object.keys(members)[0];
+
   return (
     <div>
       <TitleSection />
+      <MemberSection members={members} selectedYear={currentYear} />
+      <YearSelector members={members} selectedYear={currentYear} />
     </div>
   );
 }

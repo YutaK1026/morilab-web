@@ -114,6 +114,8 @@
     }
   },
   "member": {
-    "title": "Members"
+    "title": "Members",
+    "yearSelector": "Year Selection",
+    "memberList": "Year Members"
   }
 }

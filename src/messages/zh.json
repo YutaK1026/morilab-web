@@ -114,6 +114,8 @@
     }
   },
   "member": {
-    "title": "成员"
+    "title": "成员",
+    "yearSelector": "年度选择",
+    "memberList": "年度成员"
   }
 }
