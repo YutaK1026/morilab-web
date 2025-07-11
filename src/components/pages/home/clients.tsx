@@ -88,7 +88,7 @@ export const ResearchThemeSection = () => {
         variant="primary"
         onClick={() => {
           const localePrefix = getLocalePrefix();
-          router.push(`${localePrefix}/theme`);
+          router.push(`${localePrefix}/themes`);
         }}
       />
     </div>
