@@ -6,6 +6,8 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { routing } from "@/i18n/routing";
+import { useParams } from "next/navigation";
+import Link from "next/link";
 
 const LANGS = [
   { code: "ja", label: "日本語" },
@@ -23,33 +25,38 @@ const NAV_LINKS = [
   { href: "/access", key: "access" },
 ];
 
-const getLocalePath = (href: string) => {
-  const langs =
-    href
-      .replace(/^\/(ja|en|zh)(\/|$)/, "/")
-      .split("/")
-      .filter(Boolean)[0] ?? "";
-  return langs;
-};
-
 export default function Header({ lang }: { lang: string }) {
   const t = useTranslations("header");
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
   const router = useRouter();
+  const params = useParams<{ locale: string; years: string }>();
+  const locale = params.locale;
 
+  // 言語変更
   const handleLangChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const newLang = e.target.value;
     const path = pathname.replace(/^\/(ja|en|zh)(\/|$)/, "/");
     router.push(`/${newLang}${path}`);
   };
 
-  const isActive = (href: string) => {
-    const localePrefix = lang === `/${lang}`;
-    const fullPath = localePrefix + href;
-    return (
-      pathname === fullPath || (href !== "/" && pathname.startsWith(fullPath))
-    );
+  // ナビゲーションのアクティブ判定
+  const isActive = (href: string): boolean => {
+    const normalize = (p: string) => p.replace(/\/+$/, "") || "/";
+
+    const path = normalize(pathname);
+    const target = normalize(href);
+
+    // ルート "/" は完全一致のみ
+    if (target === "/") return path === "/";
+
+    // ロケールルート "/ja" "/en" "/zh"… は完全一致のみ
+    if (/^\/[a-z]{2}$/i.test(target)) {
+      return path === target;
+    }
+
+    // それ以外: 完全一致 or 区切り "/" で前方一致
+    return path === target || path.startsWith(`${target}/`);
   };
 
   return (
@@ -101,18 +108,18 @@ export default function Header({ lang }: { lang: string }) {
       </div>
       <nav className={`${styles.nav} ${styles.navDesktop}`}>
         {NAV_LINKS.map((link) => (
-          <a
+          <Link
             key={link.href}
-            href={getLocalePath(link.href)}
+            href={`/${locale}${link.href}`}
             className={
               styles.navLink +
-              (isActive(getLocalePath(link.href))
+              (isActive(`/${locale}${link.href}`)
                 ? ` ${styles.navLinkActive}`
                 : "")
             }
           >
             {t(link.key)}
-          </a>
+          </Link>
         ))}
       </nav>
       {/* ハンバーガーメニュー用モーダル */}
@@ -157,18 +164,18 @@ export default function Header({ lang }: { lang: string }) {
         </button>
         <nav className={styles.navMobile}>
           {NAV_LINKS.map((link) => (
-            <a
+            <Link
               key={link.href}
-              href={getLocalePath(link.href)}
+              href={`/${locale}${link.href}`}
               className={
                 styles.navLink +
-                (isActive(getLocalePath(link.href))
+                (isActive(`/${locale}${link.href}`)
                   ? ` ${styles.navLinkActive}`
                   : "")
               }
             >
               {t(link.key)}
-            </a>
+            </Link>
           ))}
         </nav>
         <div className={styles.langSelectMobile}>

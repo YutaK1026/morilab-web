@@ -1,6 +1,10 @@
+"use client";
+
 import styles from "./index.module.css";
 import Image from "next/image";
-import { getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
+import Link from "next/link";
+import { useParams } from "next/navigation";
 
 const NAV_LINKS = [
   { href: "/", label: "home" },
@@ -21,29 +25,23 @@ const IMAGES = [
   { src: "/top/main.png", alt: "img6" },
 ];
 
-const getLocalePath = (href: string) => {
-  const langs =
-    href
-      .replace(/^\/(ja|en|zh)(\/|$)/, "/")
-      .split("/")
-      .filter(Boolean)[0] ?? "";
-  return langs;
-};
+export default function Footer() {
+  const t = useTranslations("header");
+  const params = useParams<{ locale: string; years: string }>();
+  const locale = params.locale;
 
-export default async function Footer() {
-  const t = await getTranslations("header");
   return (
     <footer className={styles.footer}>
       <div className={styles.footerContent}>
         <nav className={styles.footerNav}>
           {NAV_LINKS.map((link) => (
-            <a
+            <Link
               key={link.href}
-              href={getLocalePath(link.href)}
+              href={`/${locale}${link.href}`}
               className={styles.footerLink}
             >
               {t(link.label)}
-            </a>
+            </Link>
           ))}
         </nav>
         <div className={styles.footerImages}>
