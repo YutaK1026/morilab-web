@@ -117,5 +117,10 @@
     "title": "Members",
     "yearSelector": "Year Selection",
     "memberList": "Year Members"
+  },
+  "publication": {
+    "title": "Publications",
+    "publicationList": "Year Publications",
+    "yearSelector": "Year Selection"
   }
 }

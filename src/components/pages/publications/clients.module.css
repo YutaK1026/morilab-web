@@ -60,7 +60,7 @@
   color: var(--color-text-secondary);
 }
 
-.memberSection {
+.publicationSection {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -69,7 +69,7 @@
   max-width: 800px;
 }
 
-.memberSection h2 {
+.publicationSection h2 {
   font-size: var(--font-size-lg);
   font-weight: 700;
   margin: 0;
@@ -83,7 +83,7 @@
   background-color: var(--color-border);
 }
 
-.postGroup {
+.genreGroup {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -92,59 +92,20 @@
   border-radius: 8px;
 }
 
-.postGroup h3 {
+.genreGroup h3 {
   font-size: var(--font-size-lg);
-  font-weight: 600;
+  font-weight: 700;
   margin: 0;
   color: var(--color-accent);
 }
 
-.memberList {
+.publicationList {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  flex-direction: column;
 }
 
-.memberList li {
+.publicationList li {
   padding: 0.25rem 0.5rem;
   border-radius: 8px;
   font-size: var(--font-size-md);
-}
-
-/* レスポンシブ対応 */
-@media (max-width: 640px) {
-  .section {
-    padding: 40px 20px 40px 20px;
-  }
-  .titleSection {
-    padding: 40px 20px 40px 20px;
-    gap: 2rem;
-  }
-  .border {
-    margin-top: 1rem;
-  }
-  .yearList {
-    gap: 0.5rem;
-  }
-
-  .yearLink {
-    padding: 0.4rem 0.8rem;
-    font-size: var(--font-size-md);
-  }
-
-  .postGroup {
-    padding: 1rem;
-  }
-
-  .memberList {
-    gap: 0.4rem;
-  }
-
-  .memberList li {
-    padding: 0.2rem 0.6rem;
-    font-size: var(--font-size-md);
-  }
 }

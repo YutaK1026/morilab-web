@@ -117,5 +117,10 @@
     "title": "成员",
     "yearSelector": "年度选择",
     "memberList": "年度成员"
+  },
+  "publication": {
+    "title": "论文投稿",
+    "publicationList": "年度论文投稿",
+    "yearSelector": "年度选择"
   }
 }
