@@ -1,4 +1,13 @@
 {
   "i18n-ally.localesPaths": ["src/i18n", "src/messages"],
-  "cSpell.words": ["MICCAI", "MICI", "microcms", "morilab", "newslist"]
+  "cSpell.words": [
+    "Centorea",
+    "Centrair",
+    "Kanayama",
+    "MICCAI",
+    "MICI",
+    "microcms",
+    "morilab",
+    "newslist"
+  ]
 }

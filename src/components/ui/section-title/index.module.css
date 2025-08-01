@@ -32,6 +32,8 @@
 
 .header.sm {
   font-size: var(--font-size-md);
+  width: 30%;
+  min-width: 100px;
 }
 .header.sm::after {
   height: 2px;

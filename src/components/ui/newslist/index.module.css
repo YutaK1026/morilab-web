@@ -87,7 +87,6 @@
 /* スマホ幅でのページネーション */
 @media (max-width: 640px) {
   .pagination {
-    flex-direction: column;
     gap: 0.5rem;
   }
 

@@ -125,5 +125,42 @@
   },
   "news": {
     "title": "News"
+  },
+  "access": {
+    "title": "Access",
+    "contact": {
+      "title": "Contact",
+      "phone": {
+        "title": "Phone・Email",
+        "mori": "Kensaku MORI, Prof.",
+        "mori-number": "052-789-5689",
+        "mori-email": "kensaku (at) is.nagoya-u.ac.jp ((at) is replaced with @)",
+        "lab": "Lab - Students",
+        "lab-phone": "052-789-5688"
+      },
+      "fax": {
+        "title": "FAX",
+        "mori": "Lab - Kensaku MORI, Prof. and Students",
+        "mori-number": "052-789-3815"
+      }
+    },
+    "access": {
+      "title": "Access",
+      "method": {
+        "title": "Access Method",
+        "toNagoya": "From Nagoya Station (JR, Meitetsu, Kintetsu)",
+        "toNagoya-detail": "Subway Higashiyama Line Nagoya Station → Motoyama Station (Transfer) → Nagoya University Station 3rd Exit (Transfer included, about 23 minutes)",
+        "toKanayama": "From Kanayama Station (JR, Meitetsu)",
+        "toKanayama-detail": "Subway Meijo Line Left → Nagoya University Station (about 25 minutes)",
+        "toCentrair": "From Chubu Centrair International Airport",
+        "toCentrair-detail": "Meitetsu Chubu International Airport Station → (Limited Express or Mue Sky is convenient) → Meitetsu Kanayama Station Subway → Meijo Line counterclockwise → Nagoya University Station (approx. 1 hour)",
+        "subway": "Subway Nagoya University Station, Bus Stop Nagoya University Front",
+        "subway-detail": "IB Electronic Information Building South Building 4F (1 minute walk)"
+      },
+      "address": {
+        "title": "Address",
+        "content": "464-8603 Aichi Prefecture Nagoya-shi Chikusa-ku Furocho"
+      }
+    }
   }
 }

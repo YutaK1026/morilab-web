@@ -125,5 +125,42 @@
   },
   "news": {
     "title": "最新ニュース"
+  },
+  "access": {
+    "title": "アクセス",
+    "contact": {
+      "title": "連絡方法",
+      "phone": {
+        "title": "Phone・Email",
+        "mori": "森 健策教授 - Kensaku MORI, Prof.",
+        "mori-number": "052-789-5689",
+        "mori-email": "kensaku (at) is.nagoya-u.ac.jp ((at)を@で置き換えてください)",
+        "lab": "研究室 - Students",
+        "lab-phone": "052-789-5688"
+      },
+      "fax": {
+        "title": "FAX",
+        "mori": "研究室 - Kensaku MORI, Prof. and Students",
+        "mori-number": "052-789-3815"
+      }
+    },
+    "access": {
+      "title": "交通アクセス",
+      "method": {
+        "title": "アクセス方法",
+        "toNagoya": "名古屋駅(JR・名鉄・近鉄)から",
+        "toNagoya-detail": "地下鉄東山線名古屋駅→本山駅(乗り換え)→名古屋大学駅3番出口(乗り換え含め約23分)",
+        "toKanayama": "金山駅(JR・名鉄)から",
+        "toKanayama-detail": "地下鉄名城線左回り→名古屋大学駅　(約25分)",
+        "toCentrair": "中部国際空港（セントレア）から",
+        "toCentrair-detail": "名鉄中部国際空港駅→ (特急かミュースカイが便利）→名鉄金山駅地下鉄→名城線左回り→名古屋大学駅　(約1時間)",
+        "subway": "地下鉄 名古屋大学駅,バス停 名古屋大学前より",
+        "subway-detail": "IB電子情報館 南棟 4F(徒歩1分)"
+      },
+      "address": {
+        "title": "住所",
+        "content": "〒464-8603 愛知県名古屋市千種区不老町"
+      }
+    }
   }
 }

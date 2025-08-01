@@ -42,7 +42,7 @@ export const NewsList = ({
               onClick={() => handlePageChange(currentPage - 1)}
               className={styles.pageButton}
             >
-              前へ
+              ← 前へ
             </button>
           )}
 
@@ -65,7 +65,7 @@ export const NewsList = ({
               onClick={() => handlePageChange(currentPage + 1)}
               className={styles.pageButton}
             >
-              次へ
+              次へ →
             </button>
           )}
         </div>

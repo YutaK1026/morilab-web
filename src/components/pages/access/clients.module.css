@@ -1,0 +1,33 @@
+.titleSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 60px 20px 20px 20px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 20px 20px 60px 20px;
+  @media (max-width: 640px) {
+    padding: 20px 20px 20px 20px;
+    gap: 0rem;
+  }
+}
+
+.messageContainer {
+  width: 80%;
+  font-size: var(--font-size-md);
+  font-family: "JetBrains Mono", monospace;
+  white-space: pre-line;
+}
+
+.paddingLeft {
+  padding-left: 3rem;
+  @media (max-width: 640px) {
+    padding-left: 1rem;
+  }
+}

@@ -125,5 +125,42 @@
   },
   "news": {
     "title": "最新新闻"
+  },
+  "access": {
+    "title": "交通方式",
+    "contact": {
+      "title": "联系方式",
+      "phone": {
+        "title": "电话・邮箱",
+        "mori": "森 健策教授 - Kensaku MORI, Prof.",
+        "mori-number": "052-789-5689",
+        "mori-email": "kensaku (at) is.nagoya-u.ac.jp ((at) 是 @ 的替换)",
+        "lab": "研究室 - Students",
+        "lab-phone": "052-789-5688"
+      },
+      "fax": {
+        "title": "FAX",
+        "mori": "研究室 - Kensaku MORI, Prof. and Students",
+        "mori-number": "052-789-3815"
+      }
+    },
+    "access": {
+      "title": "交通方式",
+      "method": {
+        "title": "交通方式",
+        "toNagoya": "从名古屋站（JR・名铁・近铁）出发",
+        "toNagoya-detail": "地铁东山线 名古屋站 → 本山站（换乘）→ 名古屋大学站3号出口（包含换乘约需23分钟）",
+        "toKanayama": "从金山站（JR・名铁）出发",
+        "toKanayama-detail": "地铁名城线左环方向 → 名古屋大学站（约25分钟）",
+        "toCentrair": "从中部国际机场（Centrair）出发",
+        "toCentrair-detail": "名铁中部国际机场站 →（特急或μ-SKY较为方便）→ 名铁金山站 → 地铁名城线左环方向 → 名古屋大学站（约1小时）",
+        "subway": "地铁 名古屋大学站，公交车站 名古屋大学前",
+        "subway-detail": "IB电子信息馆 南栋4楼（步行1分钟）"
+      },
+      "address": {
+        "title": "地址",
+        "content": "〒464-8603 日本爱知县名古屋市千种区不老町"
+      }
+    }
   }
 }
