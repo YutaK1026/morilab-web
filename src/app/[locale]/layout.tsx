@@ -44,7 +44,7 @@ export default async function RootLayout({
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header lang={locale} />
-          {children}
+          <main>{children}</main>
           <Footer />
         </NextIntlClientProvider>
       </body>

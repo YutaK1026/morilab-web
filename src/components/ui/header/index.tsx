@@ -62,7 +62,10 @@ export default function Header({ lang }: { lang: string }) {
   return (
     <header className={styles.header}>
       <div className={styles.headerTop}>
-        <div className={styles.headerLeft}>
+        <div
+          className={styles.headerLeft}
+          onClick={() => router.push(`/${locale}`)}
+        >
           <Image
             src="/logo.png"
             alt="Morilab Logo"

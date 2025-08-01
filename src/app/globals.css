@@ -12,6 +12,7 @@ body {
   margin: 0; /* UA デフォルト余白を消す */
   width: 100vw;
   font-family: "JetBrains Mono", monospace;
+  min-height: 150vh;
 }
 
 main {
