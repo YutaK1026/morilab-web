@@ -28,6 +28,34 @@ export const fetchLatestNews = cache(async (): Promise<News[]> => {
   return json.contents;
 });
 
+const fetchAllNewsRaw = cache(
+  async (limit = 100, offset = 0): Promise<News[]> => {
+    const data = await fetch(
+      `https://${domain}.microcms.io/api/v1/news?limit=${limit}&offset=${offset}`,
+      {
+        headers: { "X-MICROCMS-API-KEY": key },
+        next: { revalidate: 3600 }, // 1時間キャッシュ
+      }
+    ).then((res) => res.json());
+
+    if (data.offset + data.limit < data.totalCount) {
+      const nextContents = await fetchAllNewsRaw(
+        data.limit,
+        data.offset + data.limit
+      );
+      return [...data.contents, ...nextContents];
+    }
+
+    return data.contents;
+  }
+);
+export const fetchAllNews = cache(
+  async (limit = 100, offset = 0): Promise<News[]> => {
+    const allContents = await fetchAllNewsRaw(limit, offset);
+    return allContents;
+  }
+);
+
 // 生のデータを取得するための内部関数
 const fetchMembersRaw = cache(
   async (limit = 100, offset = 0): Promise<Member[]> => {

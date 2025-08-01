@@ -122,5 +122,8 @@
     "title": "Publications",
     "publicationList": "Year Publications",
     "yearSelector": "Year Selection"
+  },
+  "news": {
+    "title": "News"
   }
 }

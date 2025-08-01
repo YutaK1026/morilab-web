@@ -122,5 +122,8 @@
     "title": "論文投稿",
     "publicationList": "年度論文投稿",
     "yearSelector": "年度選択"
+  },
+  "news": {
+    "title": "最新ニュース"
   }
 }

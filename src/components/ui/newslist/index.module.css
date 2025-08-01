@@ -1,3 +1,7 @@
+.container {
+  width: 100%;
+}
+
 .list {
   margin-inline: auto;
   padding: 2rem 1rem;
@@ -38,5 +42,62 @@
   .author,
   .title {
     flex: none;
+  }
+}
+
+/* ページネーション */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.pageNumbers {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.pageButton {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--color-accent);
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  transition: all 0.2s;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.pageButton:hover {
+  background-color: var(--color-accent);
+  color: var(--color-text-secondary);
+}
+
+.pageButton.active {
+  background-color: var(--color-accent);
+  color: var(--color-text-secondary);
+}
+
+/* スマホ幅でのページネーション */
+@media (max-width: 640px) {
+  .pagination {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .pageNumbers {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .pageButton {
+    padding: 0.25rem 0.5rem;
+    font-size: var(--font-size-sm);
   }
 }
