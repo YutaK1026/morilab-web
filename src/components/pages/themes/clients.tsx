@@ -22,7 +22,7 @@ export const ImageRecognitionSection = () => {
   return (
     <div className={styles.section}>
       <SectionHeader label={t("title")} size="lg" />
-      <div className={styles.messageContainer}>
+      <div className={styles.sectionContent}>
         <p>{t("content")}</p>
       </div>
     </div>
@@ -35,7 +35,7 @@ export const ImageGenerationSection = () => {
   return (
     <div className={styles.section}>
       <SectionHeader label={t("title")} size="lg" />
-      <div className={styles.messageContainer}>
+      <div className={styles.sectionContent}>
         <p>{t("content")}</p>
       </div>
       <div className={styles.imageContainer}>
@@ -68,7 +68,7 @@ export const MedicalApplicationSection = () => {
       {/* 3Dプリンタにより造形した人体臓器モデルの利用 */}
       <div className={styles.sectionContent}>
         <SectionHeader label={t("3dPrinter.title")} size="md" />
-        <div className={styles.messageContainer}>
+        <div className={styles.messageSubContainer}>
           <p>{t("3dPrinter.content")}</p>
           <div className={styles.imageRow}>
             <div className={styles.imageContainer}>
@@ -102,7 +102,7 @@ export const MedicalApplicationSection = () => {
       {/* 仮想化内視鏡 */}
       <div className={styles.sectionContent}>
         <SectionHeader label={t("virtualEndoscope.title")} size="md" />
-        <div className={styles.messageContainer}>
+        <div className={styles.messageSubContainer}>
           <p>{t("virtualEndoscope.content")}</p>
           <div className={styles.imageRow}>
             <div className={styles.imageContainer}>
@@ -136,7 +136,7 @@ export const MedicalApplicationSection = () => {
       {/* 医用画像認識 */}
       <div className={styles.sectionContent}>
         <SectionHeader label={t("medicalImageRecognition.title")} size="md" />
-        <div className={styles.messageContainer}>
+        <div className={styles.messageSubContainer}>
           <p>{t("medicalImageRecognition.content")}</p>
           <div className={styles.imageRow}>
             <div className={styles.imageContainer}>
@@ -196,7 +196,7 @@ export const MedicalApplicationSection = () => {
       {/* コンピュータ支援診断・自動診断(CAD) */}
       <div className={styles.sectionContent}>
         <SectionHeader label={t("cad.title")} size="md" />
-        <div className={styles.messageContainer}>
+        <div className={styles.messageSubContainer}>
           <p>{t("cad.content")}</p>
           <div className={styles.imageRow}>
             <div className={styles.imageContainer}>
@@ -244,7 +244,7 @@ export const MedicalApplicationSection = () => {
       {/* 手術シュミレーション */}
       <div className={styles.sectionContent}>
         <SectionHeader label={t("surgerySimulation.title")} size="md" />
-        <div className={styles.messageContainer}>
+        <div className={styles.messageSubContainer}>
           <p>{t("surgerySimulation.content")}</p>
           <div className={styles.imageRow}>
             <div className={styles.imageContainer}>
@@ -278,7 +278,7 @@ export const MedicalApplicationSection = () => {
       {/* 人間の視覚，思考，行動の仕組みの探求 */}
       <div className={styles.sectionContent}>
         <SectionHeader label={t("humanInteraction.title")} size="md" />
-        <div className={styles.messageContainer}>
+        <div className={styles.messageSubContainer}>
           <p>{t("humanInteraction.content")}</p>
           <div className={styles.imageRow}>
             <div className={styles.imageContainer}>
