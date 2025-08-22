@@ -81,7 +81,12 @@ export default function Header({ lang }: { lang: string }) {
           </div>
         </div>
         <div className={`${styles.langSelect} ${styles.langSelectDesktop}`}>
-          <select value={lang} onChange={handleLangChange}>
+          <select
+            value={lang}
+            onChange={handleLangChange}
+            className={styles.langSelectSelect}
+            id="langSelect"
+          >
             {routing.locales.map((l) => (
               <option key={l} value={l}>
                 {LANGS.find((lang) => lang.code === l)?.label}
@@ -182,8 +187,16 @@ export default function Header({ lang }: { lang: string }) {
             </Link>
           ))}
         </nav>
-        <div className={styles.langSelectMobile}>
-          <select value={lang} onChange={handleLangChange}>
+        <div
+          className={`${styles.langSelect} ${styles.langSelectMobile}`}
+          suppressHydrationWarning
+        >
+          <select
+            value={lang}
+            onChange={handleLangChange}
+            className={styles.langSelectSelect}
+            id="langSelectMobile"
+          >
             {routing.locales.map((l) => (
               <option key={l} value={l}>
                 {LANGS.find((lang) => lang.code === l)?.label}

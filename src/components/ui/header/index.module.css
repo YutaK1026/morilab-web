@@ -75,11 +75,21 @@
 .langSelect select {
   font-family: "JetBrains Mono", monospace;
   font-size: var(--font-size-sm);
-  padding: 6px 16px;
-  border: 1px solid var(--color-border, #bbb);
+  padding: 8px 16px;
+  border: 1px solid var(--color-border, #ddd);
   border-radius: 8px;
   background: #fff;
   cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 140px;
+}
+
+.langSelect option {
+  background: #fff;
+  color: var(--color-text, #111);
+  padding: 8px 12px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: var(--font-size-sm);
 }
 
 .menuBtn {

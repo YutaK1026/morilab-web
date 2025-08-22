@@ -9,6 +9,10 @@
     "access": "Access"
   },
   "top": {
+    "morilab": {
+      "place": "Nagoya University, Information Science Research Lab",
+      "name": "Morilab"
+    },
     "message": {
       "title": "Message",
       "content1": "Morilab is a research lab that creates useful systems in the medical field based on high-dimensional image analysis from 2D to 4D. By using the technology that computers understand the human body, we aim to revolutionize diagnosis and treatment, and to challenge new industrial applications and visualizations.",
@@ -19,6 +23,14 @@
       "theme1": {
         "title": "Image Recognition, Understanding, and Computer Vision",
         "description": "Use PC to analyze medical images and connect to cancer detection and density structure analysis"
+      },
+      "theme2": {
+        "title": "Image Generation, Visualization Technology (Computer Graphics)",
+        "description": "Applied to endoscopy and surgical support with high-speed volume rendering"
+      },
+      "theme3": {
+        "title": "Application to the Medical Field",
+        "description": "3D printing in medicine is widely applied for surgery support and education"
       },
       "button": "View more"
     },

@@ -16,6 +16,7 @@ type I18nSectionsProps = {
 
 /* トップページのヒーローセクション */
 export const HeroSection = () => {
+  const t = useTranslations("top");
   return (
     <div className={styles.hero}>
       <Image
@@ -27,9 +28,9 @@ export const HeroSection = () => {
         style={{ objectFit: "cover" }}
       />
       <h1 className={styles.title}>
-        <span>名古屋大学情報学研究科</span>
+        <span>{t("morilab.place")}</span>
         <br />
-        森研究室
+        {t("morilab.name")}
       </h1>
     </div>
   );
@@ -71,16 +72,16 @@ export const ResearchThemeSection = () => {
           description={t("theme1.description")}
         />
         <Card
-          src="/top/researchTheme/1.png"
-          alt="研究テーマ1"
-          title={t("theme1.title")}
-          description={t("theme1.description")}
+          src="/top/researchTheme/2.png"
+          alt="研究テーマ2"
+          title={t("theme2.title")}
+          description={t("theme2.description")}
         />
         <Card
-          src="/top/researchTheme/1.png"
-          alt="研究テーマ1"
-          title={t("theme1.title")}
-          description={t("theme1.description")}
+          src="/top/researchTheme/3.png"
+          alt="研究テーマ3"
+          title={t("theme3.title")}
+          description={t("theme3.description")}
         />
       </div>
       <Button

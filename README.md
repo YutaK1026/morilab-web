@@ -191,12 +191,6 @@ export default function Component() {
 npm run build
 ```
 
-### 本番サーバーの起動
-
-```bash
-npm run start
-```
-
 ### 静的サイト生成
 
 このプロジェクトは完全な静的サイト生成（SSG）を使用しています：
