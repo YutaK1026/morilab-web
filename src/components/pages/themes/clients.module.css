@@ -24,13 +24,13 @@
 .messageContainer {
   width: 80%;
   font-size: var(--font-size-md);
-  font-family: "JetBrains Mono", monospace;
+  font-family: var(--font-noto-sans), sans-serif;
   white-space: pre-line;
 }
 .messageSubContainer {
   width: 90%;
   font-size: var(--font-size-md);
-  font-family: "JetBrains Mono", monospace;
+  font-family: var(--font-noto-sans), sans-serif;
   white-space: pre-line;
 }
 
@@ -47,7 +47,7 @@
 }
 .imageDescription {
   font-size: var(--font-size-sm);
-  font-family: "JetBrains Mono", monospace;
+  font-family: var(--font-noto-sans), sans-serif;
   text-align: center;
   white-space: pre-line; /* ← 改行文字をそのまま改行に */
 }

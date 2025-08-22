@@ -34,7 +34,7 @@
   flex-direction: column;
   gap: 0.5rem;
   align-items: flex-start;
-  font-family: "JetBrains Mono", monospace;
+  font-family: var(--font-noto-sans), sans-serif;
   font-size: var(--font-size-md);
 }
 
@@ -63,7 +63,7 @@
   width: 80%;
   text-align: justify;
   font-size: var(--font-size-md);
-  font-family: "JetBrains Mono", monospace;
+  font-family: var(--font-noto-sans), sans-serif;
 }
 
 .entrySection {
@@ -78,7 +78,7 @@
   width: 80%;
   gap: 0.5rem;
   align-items: flex-start;
-  font-family: "JetBrains Mono", monospace;
+  font-family: var(--font-noto-sans), sans-serif;
 }
 .entryDescription {
   width: 100%;
@@ -96,16 +96,16 @@
 .pathContainer {
   width: 80%;
   font-size: var(--font-size-md);
-  font-family: "JetBrains Mono", monospace;
+  font-family: var(--font-noto-sans), sans-serif;
   gap: 1.5rem;
 }
 .pathDescription {
   padding-bottom: 16px;
   font-size: var(--font-size-md);
-  font-family: "JetBrains Mono", monospace;
+  font-family: var(--font-noto-sans), sans-serif;
 }
 .pathExample {
   padding-bottom: 24px;
   font-size: var(--font-size-md);
-  font-family: "JetBrains Mono", monospace;
+  font-family: var(--font-noto-sans), sans-serif;
 }

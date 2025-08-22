@@ -9,6 +9,13 @@ import en from "@/messages/en.json";
 import zh from "@/messages/zh.json";
 import "@/app/globals.css";
 import "../../styles/variants.css";
+import { Noto_Sans } from "next/font/google";
+
+const notoSans = Noto_Sans({
+  subsets: ["latin"], // 日本語も使うなら "latin", "latin-ext", "japanese"
+  weight: ["400", "700"], // 必要なウェイトを指定
+  variable: "--font-noto-sans",
+});
 
 export const metadata: Metadata = {
   title: "森研究室",
@@ -40,7 +47,7 @@ export default async function RootLayout({
   const messages = MESSAGES[locale as keyof typeof MESSAGES] || MESSAGES.ja;
 
   return (
-    <html lang={locale}>
+    <html lang={locale} className={notoSans.variable}>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header lang={locale} />

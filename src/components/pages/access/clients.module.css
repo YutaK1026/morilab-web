@@ -25,7 +25,7 @@
 .messageContainer {
   width: 80%;
   font-size: var(--font-size-md);
-  font-family: "JetBrains Mono", monospace;
+  font-family: var(--font-noto-sans), sans-serif;
   white-space: pre-line;
 }
 
