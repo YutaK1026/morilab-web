@@ -11,9 +11,9 @@ export const PageTitle = ({ label, size = "md" }: PageTitleProps) => {
     size === "lg" ? "h1" : size === "md" ? "h2" : "h3";
   return (
     <Tag className={`${styles.wrapper} ${styles[size]}`}>
-      <span className={styles.line} />
+      {/* <span className={styles.line} /> */}
       <span className={styles.text}>{label}</span>
-      <span className={styles.line} />
+      {/* <span className={styles.line} /> */}
     </Tag>
   );
 };
