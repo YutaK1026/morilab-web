@@ -64,18 +64,18 @@
     "title": "研究主题",
     "imageRecognition": {
       "title": "1. 图像识别、理解、计算机视觉",
-      "content": "使用PC分析医学图像，并将其与癌症检测和密度结构分析联系起来"
+      "content": "我们正在研究面向医疗和工业应用的高精度实时图像解析技术。研究的核心是三维灰度图像识别和三维二值图像处理，包括微小线状图形的提取、基于GPU的图像算法加速、多医疗相机标定以及与传感器信息的融合。这些技术已应用于手术导航和诊断支持，正在革新临床工作流程。此外，我们还在开发高维数据的可视化方法，力求将成果以能够即时应用于实际的形式提供。"
     },
     "imageGeneration": {
       "title": "2. 图像生成, 可视化技术(计算机图形学)",
-      "content": "使用PC分析医学图像，并将其与癌症检测和密度结构分析联系起来",
+      "content": "在高速高精细体绘制方面，我们开发了一种仅依靠PC多媒体指令即可实现每秒数十帧绘制的高速软件方法，并将其应用于虚拟内窥镜。此外，我们实现了带有图像变形的可视化方法，用于补偿器官运动和测量误差，从而应用于实时手术支持和动态器官解析。",
       "imageDescription": "使用超级计算机获得的大规模湍流场的可视化"
     },
     "medicalApplication": {
       "title": "3. 医疗领域的应用",
       "3dPrinter": {
         "title": "利用3D打印制造的人体器官模型",
-        "content": "在医疗领域，3D打印的应用正不断拓展，涵盖了植入物制造、诊断支持、手术模拟、手术导航、知情同意以及医学护理教育等多个方面。",
+        "content": "在医疗领域，3D打印的应用正在不断拓展，涵盖了植入物制作、诊断支持、手术模拟、手术导航、知情同意以及医学与护理教育等多个方面。",
         "imageDescription1": "通过形状暴露法制造的肾脏模型",
         "imageDescription2": "通过形状暴露法制造的微血管结构模型"
       },
@@ -88,17 +88,17 @@
       "medicalImageRecognition": {
         "title": "医疗图像识别",
         "content": "研究对象包括支气管、腹部器官和淋巴结。针对支气管，开展了从CT图像中分割支气管区域的研究，以及为已抽取的支气管分支自动标注解剖学名称的研究。针对腹部器官，开展了从腹部CT图像中自动且同时检测各类器官的研究。针对淋巴结，开展了从CT图像中检测淋巴结的研究。",
-        "imageDescription1": "気管支領域の抽出結果",
-        "imageDescription2": "気管支領域の各枝に名称を付与した結果",
-        "imageDescription3": "腹部臓器のセグメンテーション結果",
-        "imageDescription4": "リンパ節の検出結果"
+        "imageDescription1": "支气管区域的提取结果",
+        "imageDescription2": "为支气管区域各分支命名的结果",
+        "imageDescription3": "腹部器官的分割结果",
+        "imageDescription4": "淋巴结的检测结果"
       },
       "cad": {
         "title": "计算机辅助诊断/自动诊断（CAD）",
         "content": "在计算机辅助诊断/自动诊断方面，主要研究支持肺癌、肺气肿和结肠息肉诊断的系统。",
-        "imageDescription1": "肺がんCADのシステム",
-        "imageDescription2": "肺気腫CADのシステム",
-        "imageDescription3": "大腸診断支援システム"
+        "imageDescription1": "肺癌症CAD系统",
+        "imageDescription2": "肺气肿CAD系统",
+        "imageDescription3": "大肠诊断支持系统"
       },
       "surgerySimulation": {
         "title": "手术模拟",
@@ -109,7 +109,7 @@
       "humanInteraction": {
         "title": "探索人类视觉、思考与行为机制",
         "content": "通过利用虚拟现实（实现虚拟世界的技术），尝试将其应用于医学领域。开发了可让人完全沉浸于人体内部的虚拟现实系统，并被《News Station》和《Science Eye》等节目报道。",
-        "imageDescription1": "大腸内視鏡のバーチャルリアリティー"
+        "imageDescription1": "大肠内窥镜的虚拟现实"
       }
     }
   },

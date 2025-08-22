@@ -64,24 +64,24 @@
     "title": "Research Theme",
     "imageRecognition": {
       "title": "1. Image Recognition, Understanding, and Computer Vision",
-      "content": "Use PC to analyze medical images and connect to cancer detection and density structure analysis"
+      "content": "We conduct research on high-precision real-time image analysis technologies that contribute to medical and industrial applications. Our work centers on 3D grayscale image recognition and 3D binary image processing, including the extraction of fine linear structures, acceleration of image algorithms using GPUs, multi-camera medical calibration, and integration with sensor information. These technologies are applied to surgical navigation and diagnostic support, revolutionizing clinical workflows. Furthermore, we are developing visualization methods for high-dimensional data, aiming to deliver results in forms that can be readily applied in practice."
     },
     "imageGeneration": {
       "title": "2. Image Generation, Visualization Technology (Computer Graphics)",
-      "content": "Use PC to analyze medical images and connect to cancer detection and density structure analysis",
+      "content": "In high-speed, high-resolution volume rendering, we have developed a fast software-based approach that utilizes only PC multimedia instructions to render dozens of frames per second, which has been applied to virtual endoscopy. Furthermore, we have implemented visualization methods with image deformation to compensate for organ motion and measurement errors, enabling applications in real-time surgical support and dynamic organ analysis.",
       "imageDescription": "Visualization of a large-scale turbulent flow obtained by a supercomputer"
     },
     "medicalApplication": {
       "title": "3. Application to the Medical Field",
       "3dPrinter": {
         "title": "Use of 3D-printed human organ models",
-        "content": "The use of 3D printers in the medical field is diverse, including implant creation, diagnosis support, surgery simulation, surgery navigation, informed consent, and medical nursing education.",
+        "content": "In the medical field, the utilization of 3D printing has been expanding in various directions, including implant fabrication, diagnostic support, surgical simulation, surgical navigation, informed consent, and medical and nursing education.",
         "imageDescription1": "Kidney model created by shape exposure method",
         "imageDescription2": "Model of microvascular structure created by shape exposure method"
       },
       "virtualEndoscope": {
         "title": "Virtual Endoscopy",
-        "content": "This is a technique that generates images as if they were observed with an endoscope based on CT or MR images. We have been conducting research on this continuously since 1993. We have also published the first paper on real-time interactive virtual endoscopy (virtual endoscopy).",
+        "content": "This is a technique that generates images from CT and MR scans as if they were observed through an endoscope. We have been conducting continuous research on this since 1993 and published the first paper on virtual endoscopy, which enables real-time interactive exploration.",
         "imageDescription1": "Virtual endoscopy system at the time",
         "imageDescription2": "Current virtual endoscopy system. If you would like to evaluate, please contact us by email."
       },
