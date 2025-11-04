@@ -1,6 +1,6 @@
 import styles from "./page.module.css";
 import MemberPage from "@/components/pages/members";
-import { fetchMembers } from "@/lib/microcms";
+import { fetchMembers } from "@/lib/csv";
 import { notFound } from "next/navigation";
 
 // 完全な静的生成のための設定

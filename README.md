@@ -8,7 +8,7 @@
 - **言語**: TypeScript
 - **国際化**: next-intl (日本語、英語、中国語対応)
 - **スタイリング**: CSS Modules
-- **コンテンツ管理**: microCMS
+- **コンテンツ管理**: ローカル CSV ファイル
 - **パッケージマネージャー**: npm
 
 ## 📁 プロジェクト構造
@@ -29,8 +29,14 @@ morilab/
 │   │   ├── pages/            # ページコンポーネント
 │   │   └── ui/               # 再利用可能なUIコンポーネント
 │   ├── lib/                  # ユーティリティ関数
-│   │   ├── microcms.ts       # microCMS API連携
+│   │   ├── csv.ts           # CSV読み込み機能
+│   │   ├── auth.ts          # 認証システム
 │   │   └── utils.ts          # 共通ユーティリティ
+│   ├── app/
+│   │   ├── admin/           # 管理画面
+│   │   │   ├── (auth)/     # 認証前ルート
+│   │   │   └── (authed)/   # 認証後ルート
+│   │   └── api/admin/      # 管理APIエンドポイント
 │   ├── i18n/                 # 国際化設定
 │   └── messages/             # 翻訳ファイル
 ├── data/                     # CSVデータ（バックアップ）
@@ -46,16 +52,7 @@ morilab/
 npm install
 ```
 
-### 2. 環境変数の設定
-
-`.env`ファイルを作成し、以下の環境変数を設定してください：
-
-```env
-MICROCMS_SERVICE_DOMAIN=your-service-domain
-MICROCMS_API_KEY=your-api-key
-```
-
-### 3. 開発サーバーの起動
+### 2. 開発サーバーの起動
 
 ```bash
 npm run dev
@@ -79,15 +76,17 @@ npm run dev
 
 ## 📝 コンテンツ管理
 
-### microCMS との連携
+### ローカル CSV ファイルの利用
 
-- **ニュース**: 研究室の最新情報
-- **メンバー**: 研究室メンバーの情報
-- **論文・発表**: 研究成果の発表
+データは`data/`ディレクトリ内の CSV ファイルから読み込まれます：
+
+- **ニュース**: `data/news.csv`
+- **メンバー**: `data/members.csv`
+- **論文・発表**: `data/publications.csv`
 
 ### データ取得の仕組み
 
-`src/lib/microcms.ts`で microCMS API からデータを取得：
+`src/lib/csv.ts`で CSV ファイルからデータを取得：
 
 ```typescript
 // 最新ニュースの取得
@@ -99,6 +98,32 @@ const members = await fetchMembers();
 // 論文・発表の取得
 const publications = await fetchPublications();
 ```
+
+### 管理画面
+
+データの編集は管理画面から行えます：
+
+1. 開発サーバーを起動: `npm run dev`
+2. 管理画面にアクセス: `http://localhost:3000/admin/login`
+3. パスワードを入力してログイン
+4. データを編集・保存
+5. ビルドを実行してサイトを更新
+
+**注意**: 管理画面は開発サーバー（`npm run dev`）でのみ動作します。本番環境では常時起動の開発サーバーが必要です。
+
+#### 認証
+
+管理画面は以下の 2 段階認証で保護されています：
+
+1. **IP アドレス制限**: 環境変数`ALLOWED_IPS`で許可された IP アドレスのみアクセス可能
+2. **パスワード認証**: 環境変数`ADMIN_PASSWORD`で設定されたパスワードが必要
+
+#### ディレクトリ構造
+
+管理画面は認証状態に応じて分離されています：
+
+- `admin/(auth)/login` - 認証前のログイン画面
+- `admin/(authed)/edit` - 認証後の編集画面
 
 ## 🎨 スタイリング
 
@@ -207,10 +232,10 @@ npm run build
    - `.env`ファイルが正しい場所にあるか確認
    - 開発サーバーを再起動
 
-2. **microCMS API エラー**
+2. **CSV ファイル読み込みエラー**
 
-   - API キーとサービスドメインが正しいか確認
-   - ネットワーク接続を確認
+   - `data/`ディレクトリ内の CSV ファイルが存在するか確認
+   - CSV ファイルの形式が正しいか確認（1 行目は説明行、2 行目以降がヘッダーとデータ）
 
 3. **TypeScript エラー**
    - `npm run lint`でエラーを確認
@@ -220,7 +245,6 @@ npm run build
 
 - [Next.js Documentation](https://nextjs.org/docs)
 - [next-intl Documentation](https://next-intl-docs.vercel.app/)
-- [microCMS Documentation](https://document.microcms.io/)
 
 ## 🤝 コントリビューション
 

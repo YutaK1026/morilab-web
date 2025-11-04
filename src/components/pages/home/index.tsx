@@ -1,4 +1,4 @@
-import { fetchLatestNews } from "@/lib/microcms";
+import { fetchLatestNews } from "@/lib/csv";
 import {
   HeroSection,
   MessageSection,

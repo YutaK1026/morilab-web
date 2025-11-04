@@ -1,4 +1,4 @@
-import { Publication } from "./microcms";
+import { Publication } from "./csv";
 
 export type MemberContent = {
   year: string;

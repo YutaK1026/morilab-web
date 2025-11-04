@@ -1,4 +1,4 @@
-import { fetchPublications } from "@/lib/microcms";
+import { fetchPublications } from "@/lib/csv";
 import { redirect } from "next/navigation";
 // 完全な静的生成のための設定
 export const dynamic = "force-static";

@@ -1,4 +1,4 @@
-import { News } from "@/lib/microcms";
+import { News } from "@/lib/csv";
 import styles from "./index.module.css";
 
 interface NewsListProps {

@@ -4,7 +4,7 @@ import { PageTitle } from "@/components/ui/page-title";
 import styles from "./clients.module.css";
 import { useTranslations } from "next-intl";
 import { NewsList } from "@/components/ui/newslist";
-import { News } from "@/lib/microcms";
+import { News } from "@/lib/csv";
 import { useParams, useRouter } from "next/navigation";
 
 /* タイトル */

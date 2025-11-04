@@ -1,6 +1,6 @@
-import { fetchLatestNews } from "@/lib/microcms";
+import { fetchLatestNews } from "@/lib/csv";
 import { TitleSection, NewsSection } from "./clients";
-import { News } from "@/lib/microcms";
+import { News } from "@/lib/csv";
 
 interface NewsPageProps {
   news?: News[];

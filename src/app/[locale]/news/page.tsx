@@ -1,6 +1,6 @@
 import NewsPage from "@/components/pages/news";
 import styles from "./page.module.css";
-import { fetchAllNews } from "@/lib/microcms";
+import { fetchAllNews } from "@/lib/csv";
 
 export default async function News() {
   const allNews = await fetchAllNews();

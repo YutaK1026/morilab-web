@@ -7,7 +7,7 @@ import { Card } from "@/components/ui/card";
 import { PageTitle } from "@/components/ui/page-title";
 import Image from "next/image";
 import styles from "./clients.module.css";
-import { News } from "@/lib/microcms";
+import { News } from "@/lib/csv";
 import { NewsList } from "@/components/ui/newslist";
 
 type I18nSectionsProps = {
